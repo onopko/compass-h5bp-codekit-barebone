@@ -52,38 +52,30 @@ preferred_syntax = :scss
 
 ## SCSSファイルの構成
 
-### /assets/scss/h5bp/
-### /assets/scss/_h5bp.scss
-
+* /assets/scss/h5bp/
+* /assets/scss/_h5bp.scss
 Compass-h5bpの構成ディレクトリ&ファイルです。編集の必要はありません。
 
-### /assets/scss/base.scss
-
+* /assets/scss/base.scss
 Compass-h5bpの構成ファイル群の読み込み、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
+Compassによるコンパイルにより、CSSフォルダへbase.cssが出力されます。
 
-Compassによるコンパイルにより、CSSフォルダbase.cssが出力されます。
-
-### /assets/scss/core.scss
-
+* /assets/scss/core.scss
 デフォルト設定では_common.scssを読み込み、コンパイルによりCSSフォルダ内にcore.cssを出力します。自作したその他の_XXXXXX.scssファイルを@import指定することでcore.cssへ統合・圧縮することが可能です。
 
 
 ## JavaScriptファイルの構成
 
-### /assets/js/vendor/
-
+* /assets/js/vendor/
 各種ライブラリを含んでいます。編集の必要はありません。
 
-### /assets/js/_plugins.js
-
+* /assets/js/_plugins.js
 jQueryプラグインをまとめて記述することを想定したファイルです。
 
-### /assets/js/base.js
-
+* /assets/js/base.js
 '/assets/js/vendor/ga_social_tracking.js', '/assets/js/vendor/cssua.min.js', '/assets/js/_plugins.js'を統合・圧縮し、コンパイルによりbase.min.jsを出力します。
 
-### /assets/js/core.js
-
+* /assets/js/core.js
 各種処理を記述するメインファイルの想定です。
 
 
