@@ -21,7 +21,7 @@ And useful libraries and many helpful tips are included, too.
 * Google Analytics’s social tracking for Faebook and Twitter.
 * Facebook OGP support.
 * Twitter Card support.
-* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” OpenType font and @font-family property in css ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)).
+* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” webfonts and @font-family property in css ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)).
 * browserconfig.xml support.
 * rel="logo" and logo.svg support.
 

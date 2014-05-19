@@ -22,7 +22,7 @@ Compass H5bp Codekit Bareboneは[Codekit](https://incident57.com/codekit/)のた
 * Google AnalyticsによるFacebookおよびTwitterのソーシャル トラッキングを設定済み。
 * Facebook OGPタグを設置済み。
 * Twitter Cardタグを設置済み。
-* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” OpenTypeフォントの追加、CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss))へ@font-familyプロパティを設定済み。
+* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” webfontsの追加、CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss))へ@font-familyプロパティを設定済み。
 * browserconfig.xmlおよび関連ファイルを追加済み。
 * rel="logo" 設定済み。
 
