@@ -30,8 +30,9 @@ Compass H5bp Codekit Bareboneは[Codekit](https://incident57.com/codekit/)のた
 ## 使用方法
 
 1. [ZIPをダウンロード](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip)して解凍してください。
-2. Codekitへドロップしてください。
-3. するべきことは他にありません。それだけです。
+2. 解凍したフォルダを任意の場所に設置し、必要であればフォルダ名も変更してください。
+3. Codekitへドロップしてください。
+4. That’s it!
 
 
 ## 設定済みのCompass環境設定
