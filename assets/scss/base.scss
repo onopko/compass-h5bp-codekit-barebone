@@ -49,12 +49,14 @@ body {
 */
 
 @font-face {
+	font-family: 'Adobe Blank';
+	src: url('/assets/fonts/AdobeBlank.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/AdobeBlank.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('/assets/fonts/AdobeBlank.woff') format('woff'), /* Modern Browsers */
+	     url('/assets/fonts/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
     font-weight: normal;
     font-style: normal;
-    font-family: 'Adobe Blank';
-    src: url('/assets/fonts/AdobeBlank.otf');
 }
-
 
 /* ---------------------------------
 *    Font Size
