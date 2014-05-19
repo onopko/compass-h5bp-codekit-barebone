@@ -16,12 +16,13 @@ And useful libraries and many helpful tips are included, too.
 ## Features
 
 * Compass ready.
-* User agent detecting by CssUserAgent.
+* Codekit ready.
+* User agent detecting by CssUserAgent (cssua.js).
 * Social plugin support for Facebook, Twitter and Google+.
 * Google Analytics’s social tracking for Faebook and Twitter.
-* Facebook OGP support.
+* Facebook ogp support.
 * Twitter Card support.
-* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” webfonts and @font-family property in css ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)).
+* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” webfonts and @font-family property in (s)css ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)).
 * browserconfig.xml support.
 * rel="logo" and logo.svg support.
 
@@ -30,7 +31,7 @@ And useful libraries and many helpful tips are included, too.
 
 1. [Download ZIP](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip) and unzip it.
 2. Drop unzipped folder to Codekit.
-3. Nothing. That’it.
+3. Nothing. That’s it!
 
 
 ## Preset config for Compass
@@ -56,5 +57,6 @@ preferred_syntax = :scss
 * [HTML5 Boilerplate](http://html5boilerplate.com/), created by Paul Irish and Divya Manian.
 * [Compass H5bp](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
 * [CssUserAgent (cssua.js)](http://cssuseragent.org), created by Peter Gumeson.
+* [Adobe Blank](http://sourceforge.net/adobe/adobe-blank/), created by Adobe Systems Incorporated.
 
 Copyright (c) 2014 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.
