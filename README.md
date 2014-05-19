@@ -102,6 +102,6 @@ jQueryプラグインをまとめて記述することを想定したファイ�
 * [HTML5 Boilerplate](http://html5boilerplate.com/), created by Paul Irish and Divya Manian.
 * [Compass H5bp](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
 * [CssUserAgent (cssua.js)](http://cssuseragent.org), created by Peter Gumeson.
-* [Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)
+* [Adobe Blank](http://sourceforge.net/adobe/adobe-blank/), created by Adobe Systems Incorporated.
 
 Copyright (c) 2014 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.
