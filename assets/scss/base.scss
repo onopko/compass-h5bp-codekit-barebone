@@ -1,0 +1,82 @@
+@import "compass";
+@import "h5bp";
+
+@include h5bp-normalize;
+@include h5bp-main;
+@include h5bp-helpers;
+
+
+/* ==========================================================================
+   Basic
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0 0 0 0;
+	color: #444;
+	line-height: 1.5em;
+}
+
+a:focus { outline: none; border: 0; }
+button::-moz-focus-inner { border: 0; }
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* ---------------------------------
+*    Font Family
+*/
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS P Gothic', sans-serif;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern";
+	-webkit-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern";
+	-moz-font-feature-settings: "kern=1";
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/* ---------------------------------
+*    Font Family
+*/
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Adobe Blank';
+    src: url('/assets/fonts/AdobeBlank.otf');
+}
+
+
+/* ---------------------------------
+*    Font Size
+*
+*     77% = 10px    |    124% = 16px |    169% = 22px
+*     85% = 11px    |    131% = 17px |    177% = 23px
+*     93% = 12px    |    139% = 18px |    185% = 24px
+*    100% = 13px    |    147% = 19px |    192% = 25px
+*    108% = 14px    |    154% = 20px |    200% = 26px
+*    116% = 15px    |    162% = 21px |
+*/
+
+.x-large   { font-size: 139%; }
+.large     { font-size: 124%; }
+.mid       { font-size: 108%; }
+.small     { font-size:  93%; }
+.x-small   { font-size:  85%; }
+.xx-small  { font-size:  77%; }
