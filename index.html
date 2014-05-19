@@ -28,8 +28,8 @@
 
 		<link rel="image_src" href="">
 		<link rel="canonical" href="">
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="logo" href="/assets/images/common/logo.svg">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="logo" href="/logo.svg">
 
 		<link rel="stylesheet" href="/assets/css/core.css">
 		<script src="/assets/js/vendor/modernizr-2.8.0.min.js"></script>
@@ -43,12 +43,14 @@
 		<p>Hello world! This is HTML5 Boilerplate.</p>
 		<fb:like href="" send="false" layout="button_count" width="70" show_faces="false"></fb:like>
 		<a href="http://twitter.com/share" class="twitter-share-button" data-text="" data-url="" data-hashtags="" data-lang="ja">ツイート</a>
+		<div class="g-plusone" data-size="medium"></div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 		<script src="/assets/js/base.min.js"></script>
 		<script src="/assets/js/core.min.js"></script>
 
+		<!-- Facebook JavaScript SDK -->
 		<div id="fb-root"></div>
 		<script type="text/javascript">
 			window.fbAsyncInit = function() {
@@ -73,6 +75,7 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 
+		<!-- Twitter Widgets -->
 		<script>
 			!function (d, s, id) {
 				var js, fjs = d.getElementsByTagName(s)[0],
@@ -86,6 +89,16 @@
 					fjs.parentNode.insertBefore(js, fjs);
 				}
 			} (document, 'script', 'twitter-wjs');
+		</script>
+
+		<script type="text/javascript">
+			window.___gcfg = {lang: 'ja'};
+
+			(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/platform.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
 		</script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

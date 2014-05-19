@@ -17,12 +17,13 @@ And useful libraries and many helpful tips are included, too.
 
 * Compass ready.
 * User agent detecting by CssUserAgent.
-* Social plugin support for Facebook and Twitter.
+* Social plugin support for Facebook, Twitter and Google+.
 * Google Analytics’s social tracking for Faebook and Twitter.
 * Facebook OGP support.
 * Twitter Card support.
 * “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” OpenType font and @font-family property in css ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)).
 * browserconfig.xml support.
+* rel="logo" and logo.svg support.
 
 
 ## Usage

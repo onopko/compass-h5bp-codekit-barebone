@@ -18,12 +18,13 @@ Compass H5bp Codekit Bareboneは[Codekit](https://incident57.com/codekit/)のた
 
 * Compassの環境設定済み。
 * CssUserAgentによるUser Agentの判別処理を追加済み。
-* FacebookとTwitterのソーシャル プラグイン コードを設定済み。
+* Facebook, Twitter, Google+のソーシャル プラグイン コードを設定済み。
 * Google AnalyticsによるFacebookおよびTwitterのソーシャル トラッキングを設定済み。
 * Facebook OGPタグを設置済み。
 * Twitter Cardタグを設置済み。
-* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” OpenTypeフォントの追加、CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss))へ@font-familyプロパティを設定済み。
+* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” OpenTypeフォントの追加、CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss))へ@font-familyプロパティを設定済み。
 * browserconfig.xmlおよび関連ファイルを追加済み。
+* rel="logo" 設定済み。
 
 
 ## 使用方法
@@ -84,5 +85,6 @@ jQueryプラグインをまとめて記述することを想定したファイ�
 * [HTML5 Boilerplate](http://html5boilerplate.com/), created by Paul Irish and Divya Manian.
 * [Compass H5bp](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
 * [CssUserAgent (cssua.js)](http://cssuseragent.org), created by Peter Gumeson.
+* [Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)
 
 Copyright (c) 2014 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.
