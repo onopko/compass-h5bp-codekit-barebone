@@ -145,7 +145,7 @@
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/scss\/_common.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_common.css",
 		"outputPathIsOutsideProject": 0,
