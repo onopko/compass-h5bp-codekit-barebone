@@ -4,8 +4,8 @@
  *
  * ------------------------------------------------------------------ */
 
-/* Responsive Breakpoint Definition
-   ========================================================================== */
+/* Breakpoints’ Definition for responsive layout
+   ================================================================== */
 
 @mixin breakpoint($point) {
 
@@ -34,8 +34,8 @@
 /* This is a example of usage of @mixin breakpoint */
 h1.media {
 	&:before {
-		content: 'wide (min-width: 1281px)';
-		@include breakpoint(desktop) { content: 'desktop (max-width: 1280px)'; }
+		content: 'desktop (max-width: 1280px)';
+		@include breakpoint(wide) { content: 'wide (max-width: 1280px)'; }
 		@include breakpoint(tablet) { content: 'tablet (max-width: 960px)'; }
 		@include breakpoint(mobile) { content: 'mobile (max-width: 568px)'; }
 	}
