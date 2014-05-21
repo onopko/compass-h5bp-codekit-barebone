@@ -1,16 +1,21 @@
 h1.media {
 	&:before {
-		@if $media == default {
-			content: 'default';
+		@if $media == all {
+			border-bottom: 1px dotted #222;
 		}
-		@if $media == wide {
-			content: 'wide: (min-width: 1280px)';
-		}
-		@if $media == tablet {
-			content: 'tablet: (min-width: 569px) and (max-width: 959px)';
-		}
-		@if $media == mobile {
-			content: 'mobile: (max-width: 568px)';
+		@else {
+			@if $media == wide {
+				content: 'wide: (min-width: 1280px)';
+			}
+			@else if $media == desktop {
+				content: 'desktop: (min-width: 960px) and (max-width: 1279px)';
+			}
+			@else if $media == tablet {
+				content: 'tablet: (min-width: 569px) and (max-width: 959px)';
+			}
+			@else if $media == mobile {
+				content: 'mobile: (max-width: 568px)';
+			}
 		}
 	}
 }

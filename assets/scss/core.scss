@@ -1,11 +1,16 @@
 @import "compass";
 
 
-$media: default;
+$media: all;
 @import "common";
 
 @media screen and (min-width: 1280px) {
 	$media: wide;
+	@import "common";
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+	$media: desktop;
 	@import "common";
 }
 
