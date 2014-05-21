@@ -1,9 +1,9 @@
 # Compass H5bp Codekit Barebone
 
-Compass H5bp Codekit Barebone は [Codekit](https://incident57.com/codekit/) のために用意したHTML5フロントエンド テンプレートです。
+Compass H5bp Codekit Bareboneは[Codekit](https://incident57.com/codekit/)のために用意したHTML5フロントエンド テンプレートです。
 
-[HTML5 Boilerplate](http://html5boilerplate.com/) をベースとし、 [Compass H5bp](https://github.com/sporkd/compass-h5bp) による Compass への最適化の他、有用なライブラリや様々な Tips を含んでいます。
-ダウンロードしてすぐに Codekit による Compass + Sass (Scss) コーディングを開始できることを目的としています。
+[HTML5 Boilerplate](http://html5boilerplate.com/)をベースとし、[Compass H5bp](https://github.com/sporkd/compass-h5bp)によるCompass対応CSSへの最適化の他、有用なライブラリや様々なTipsを含んでいます。
+ダウンロードしてすぐにCodekitによるCompass + Sassコーディングを開始できることを目的としています。
 
 
 ## フレームワークとライブラリ
@@ -16,16 +16,16 @@ Compass H5bp Codekit Barebone は [Codekit](https://incident57.com/codekit/) の
 
 ## 特徴
 
-* Compass の環境設定済み。
-* Codekit の環境設定済み。
-* CssUserAgent による User Agent の判別処理を追加済み。
-* Facebook, Twitter, Google+ のソーシャル プラグイン コードを設定済み。
-* Google Analytics による Facebook および Twitter のソーシャル トラッキングを設定済み。
-* Facebook og タグを設置済み。
-* Twitter Card タグを設置済み。
-* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” webfonts の追加、 (S)CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)) へ @font-family プロパティを設定済み。
-* browserconfig.xml および関連ファイルを追加済み。
-* rel="logo" 設定済み。
+* Compassの環境設定済み。
+* Codekitの環境設定済み。
+* CssUserAgent (cssua.js)によるUser Agentの判別処理を追加済み。
+* Facebook, Twitter, Google+のソーシャル プラグイン コードを設定済み。
+* Google AnalyticsによるFacebookおよびTwitterのソーシャル トラッキングを設定済み。
+* Facebook ogタグを設置済み。
+* Twitter Cardタグを設置済み。
+* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” webfonts の追加、(S)CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss))へ@font-familyプロパティを設定済み。
+* browserconfig.xmlおよび関連ファイルを追加済み。
+* rel="logo"設定済み。
 
 
 ## 使用方法
@@ -55,28 +55,28 @@ preferred_syntax = :scss
 
 ## SCSSファイルの構成
 
-* /assets/scss/h5bp/
+* /assets/scss/h5bp/*.scss
 * /assets/scss/_h5bp.scss
 
-Compass-h5bp の構成ディレクトリ & ファイルです。編集の必要はありません。
+Compass H5bpの構成ファイルです。編集の必要はありません。
 
 ---
 
 * /assets/scss/base.scss
 
-Compass-h5bp の構成ファイル群の読み込み、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
-Compass によるコンパイルにより、 CSS フォルダへ base.css が出力されます。
+Compass H5bpの構成ファイル群の読み込み、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
+Compassによるコンパイルにより、CSSフォルダへbase.cssが出力されます。
 
 ---
 
 * /assets/scss/core.scss
 
-デフォルト設定では _common.scss を読み込み、コンパイルにより CSS フォルダ内に core.css を出力します。自作したその他の _XXXXXX.scss ファイルを @import 指定することで core.css へ統合・圧縮することが可能です。
+デフォルト設定では_common.scssを読み込み、コンパイルによりCSSフォルダ内にcore.cssを出力します。自作したその他の_XXXXXX.scssファイルを@import指定することでcore.cssへ統合・圧縮することが可能です。
 
 
 ## JavaScriptファイルの構成
 
-* /assets/js/vendor/
+* /assets/js/vendor/*.js
 
 各種ライブラリを含んでいます。編集の必要はありません。
 
@@ -84,13 +84,13 @@ Compass によるコンパイルにより、 CSS フォルダへ base.css が出
 
 * /assets/js/_plugins.js
 
-jQuery プラグインをまとめて記述することを想定したファイルです。
+jQueryプラグインをまとめて記述することを想定したファイルです。
 
 ---
 
 * /assets/js/base.js
 
-/assets/js/vendor/ga_social_tracking.js, /assets/js/vendor/cssua.min.js, /assets/js/_plugins.js を統合・圧縮し、コンパイルにより base.min.js を出力します。
+/assets/js/vendor/ga_social_tracking.js, /assets/js/vendor/cssua.min.js, /assets/js/_plugins.jsを統合・圧縮し、コンパイルによりbase.min.jsを出力します。
 
 ---
 
