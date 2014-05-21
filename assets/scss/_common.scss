@@ -1,0 +1,42 @@
+/* ==================================================================
+ *
+ * Mixin
+ *
+ * ------------------------------------------------------------------ */
+
+/* Responsive Breakpoint Definition
+   ========================================================================== */
+
+@mixin breakpoint($point) {
+
+	@if $point == wide {
+		@media screen and (min-width: 1281px) { @content ; }
+	}
+	@else if $point == desktop {
+		@media screen and (max-width: 1280px) { @content ; }
+	}
+	@else if $point == tablet {
+		@media screen and (max-width: 960px) { @content ; }
+	}
+	@else if $point == mobile {
+		@media screen and (max-width: 568px) { @content ; }
+	}
+
+}
+
+
+/* ==================================================================
+ *
+ * Common Styles
+ *
+ * ------------------------------------------------------------------ */
+
+/* This is a example of usage of @mixin breakpoint */
+h1.media {
+	&:before {
+		content: 'wide (min-width: 1281px)';
+		@include breakpoint(desktop) { content: 'desktop (max-width: 1280px)'; }
+		@include breakpoint(tablet) { content: 'tablet (max-width: 960px)'; }
+		@include breakpoint(mobile) { content: 'mobile (max-width: 568px)'; }
+	}
+}

@@ -1,0 +1,1 @@
+h1.media:before{content:'wide (min-width: 1281px)'}@media screen and (max-width: 1280px){h1.media:before{content:'desktop (max-width: 1280px)'}}@media screen and (max-width: 960px){h1.media:before{content:'tablet (max-width: 960px)'}}@media screen and (max-width: 568px){h1.media:before{content:'mobile (max-width: 568px)'}}
