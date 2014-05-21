@@ -1,2 +1,20 @@
 @import "compass";
+
+
+$media: default;
 @import "common";
+
+@media screen and (min-width: 1280px) {
+	$media: wide;
+	@import "common";
+}
+
+@media screen and (min-width: 569px) and (max-width: 959px) {
+	$media: tablet;
+	@import "common";
+}
+
+@media screen and (max-width: 568px) {
+	$media: mobile;
+	@import "common";
+}
