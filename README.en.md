@@ -5,58 +5,65 @@ It’s based on [HTML5 Boilerplate](http://html5boilerplate.com/) and is optimiz
 And useful libraries and many helpful tips are included, too.
 
 
-## Frameworks and Libraries
+## System Requirements
 
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
-* [Compass H5bp](https://github.com/sporkd/compass-h5bp)
-* [CssUserAgent (cssua.js)](http://cssuseragent.org)
-* [Google Analytics Social Tracking](https://code.google.com/p/analytics-api-samples/source/browse/trunk/src/tracking/javascript/v5/social/ga_social_tracking.js)
+* [Codekit](https://incident57.com/codekit/)
+* [Bower](http://bower.io)
 
 
 ## Features
 
-* Compass ready.
 * Codekit ready.
-* User agent detecting by CssUserAgent (cssua.js).
+* Compass ready.
+* Resource management by Bower.
+* .css{user:agent;} and Underscore.js ready.
 * Social plugin support for Facebook, Twitter and Google+.
 * Google Analytics’s social tracking for Faebook and Twitter.
 * Facebook ogp support.
 * Twitter Card support.
 * “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/wiki/Home/)” webfonts and @font-family property in (s)css ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)).
-* browserconfig.xml support.
+* Web Clips (apple-touch-icon.png / browserconfig.xml) settings ready.
 * rel="logo" and logo.svg support.
 
 
 ## Usage
 
+0. Install and setup the system requirements.
 1. [Download ZIP](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip) and unzip it.
 2. Drop unzipped folder to Codekit.
-3. Nothing. That’s it!
+3. That’s it!
 
 
 ## Preset config for Compass
 
 ```ruby
-http_path = "/"
-css_dir = "assets/css"
-sass_dir = "assets/scss"
-images_dir = "assets/images"
-javascripts_dir = "assets/js"
-fonts_dir = "assets/fonts"
+http_path        = "/"
+css_dir          = "assets/css"
+sass_dir         = "assets/scss"
+images_dir       = "assets/images"
+javascripts_dir  = "assets/js"
+fonts_dir        = "assets/fonts"
+httpimagespath   = "/assets/images"
 
-output_style = :compressed
+output_style     = :compressed
 
-color_output = false
+relative_assets  = false
+
+color_output     = false
 
 preferred_syntax = :scss
+
+sass_options     = { :debug_info => true }
 ```
 
 
 ## License
 
-* [HTML5 Boilerplate](http://html5boilerplate.com/), created by Paul Irish and Divya Manian.
-* [Compass H5bp](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
-* [CssUserAgent (cssua.js)](http://cssuseragent.org), created by Peter Gumeson.
+* [HTML5 Boilerplate](http://html5boilerplate.com/), created by HTML5 Boilerplate.
+* [An HTML5 Boilerplate Extension for Compass](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
+* [.css{user:agent;}](https://github.com/mckamey/cssuseragent), created by Stephen M. McKamey.
+* [normalize-scss](https://github.com/JohnAlbin/normalize-scss), created by Nicolas Gallagher and Jonathan Neal and John Albin Wilkins.
+* [underscore.js](https://github.com/jashkenas/underscore), created by Jeremy Ashkenas.
 * [Adobe Blank](http://sourceforge.net/adobe/adobe-blank/), created by Adobe Systems Incorporated.
 
-Copyright (c) 2014 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.
+Copyright (c) 2015 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.

@@ -629,12 +629,12 @@ textarea {
 /* ==================================================================
  * Basic
  * ------------------------------------------------------------------ */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000328}}
 a:focus {
   outline: none;
   border: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000329}}
 button::-moz-focus-inner {
   border: 0; }
 
@@ -649,7 +649,7 @@ button::-moz-focus-inner {
   /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000346}}
 body {
   font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   text-rendering: optimizeLegibility;
@@ -659,26 +659,26 @@ body {
   -moz-font-feature-settings: 'kern=1';
   -webkit-font-smoothing: antialiased; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000354}}
-.x-large {
-  font-size: 32px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000355}}
-.large {
-  font-size: 24px; }
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000356}}
-.mid {
-  font-size: 18.72px; }
+.x-large {
+  font-size: 30px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000357}}
-.normal {
-  font-size: 16px; }
+.large {
+  font-size: 22.5px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000358}}
-.small {
-  font-size: 13.28px; }
+.mid {
+  font-size: 17.55px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000359}}
+.normal {
+  font-size: 15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000360}}
+.small {
+  font-size: 12.45px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000361}}
 .x-small {
-  font-size: 10.72px; }
+  font-size: 10.05px; }

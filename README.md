@@ -1,77 +1,74 @@
-# Compass H5bp Codekit Barebone
+# Compass H5BP Codekit Barebone
 
-Compass H5bp Codekit Bareboneは[Codekit](https://incident57.com/codekit/)のために用意したHTML5フロントエンド テンプレートです。
+Compass H5BP Codekit Barebone は [Codekit](https://incident57.com/codekit/) のために用意したHTML5フロントエンド テンプレートです。
 
-[HTML5 Boilerplate](http://html5boilerplate.com/)をベースとし、[Compass H5bp](https://github.com/sporkd/compass-h5bp)によるCompass対応CSSへの最適化の他、有用なライブラリや様々なTipsを含んでいます。
-ダウンロードしてすぐにCodekitによるCompass + Sassコーディングを開始できることを目的としています。
+[HTML5 Boilerplate](http://html5boilerplate.com/) をベースとし、 [Compass H5BP](https://github.com/sporkd/compass-h5bp) による Compass 対応 CSS への最適化の他、有用なライブラリや様々な Tips を含んでいます。
+ダウンロードしてすぐに Codekit による Compass + Sass コーディングを開始できることを目的としています。
 
 
-## フレームワークとライブラリ
+## システム要件
 
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
-* [Compass H5bp](https://github.com/sporkd/compass-h5bp)
-* [CssUserAgent (cssua.js)](http://cssuseragent.org)
-* [Google Analytics Social Tracking](https://code.google.com/p/analytics-api-samples/source/browse/trunk/src/tracking/javascript/v5/social/ga_social_tracking.js)
+* [Codekit](https://incident57.com/codekit/)
+* [Bower](http://bower.io)
 
 
 ## 特徴
 
-* Compassの環境設定済み。
-* Codekitの環境設定済み。
-* CssUserAgent (cssua.js)によるUser Agentの判別処理を追加済み。
-* Facebook, Twitter, Google+のソーシャル プラグイン コードを設定済み。
-* Google AnalyticsによるFacebookおよびTwitterのソーシャル トラッキングを設定済み。
-* Facebook ogタグを設置済み。
-* Twitter Cardタグを設置済み。
-* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” webfonts の追加、(S)CSS ([_base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss))へ@font-familyプロパティを設定済み。
-* browserconfig.xmlおよび関連ファイルを追加済み。
-* rel="logo"設定済み。
+* Codekit の環境設定済み。
+* Compass の環境設定済み。
+* bower.json によるリソース管理。
+* .css{user:agent;} と Underscore.js を組み込み済み。
+* Facebook, Twitter, Google+ のソーシャル プラグイン コードを設定済み。
+* Google Analytics による Facebook および Twitter のソーシャル トラッキングを設定済み。
+* Facebook og タグを設置済み。
+* Twitter Card タグを設置済み。
+* “[Adobe Blank](http://sourceforge.net/adobe/adobe-blank/)” Webフォント の追加、 (S)CSS ([base.scss](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/assets/scss/base.scss)) へ @font-family プロパティを設定済み。
+* Webクリップ (apple-touch-icon.png, browserconfig.xml) の設定および関連ファイルを追加済み。
+* rel="logo" 設定済み。
 
 
 ## 使用方法
 
-1. [ZIP をダウンロード](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip)して解凍してください。
-2. 解凍したフォルダを任意の場所に設置し、必要であればフォルダ名も変更してください。
-3. Codekit へドロップしてください。
-4. That’s it!
+0. Codekit および Bower をインストールし、システム要件を満たしてください。
+1. [ZIP をダウンロード](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip) して解凍してください。
+2. Codekit へドロップしてください。
+3. That’s it!
 
 
 ## 設定済みのCompass環境設定
 
 ```ruby
-http_path = "/"
-css_dir = "assets/css"
-sass_dir = "assets/scss"
-images_dir = "assets/images"
-javascripts_dir = "assets/js"
-fonts_dir = "assets/fonts"
+http_path        = "/"
+css_dir          = "assets/css"
+sass_dir         = "assets/scss"
+images_dir       = "assets/images"
+javascripts_dir  = "assets/js"
+fonts_dir        = "assets/fonts"
+httpimagespath   = "/assets/images"
 
-output_style = :compressed
+output_style     = :compressed
 
-color_output = false
+relative_assets  = false
+
+color_output     = false
 
 preferred_syntax = :scss
+
+sass_options     = { :debug_info => true }
 ```
 
 ## SCSSファイルの構成
 
-* /assets/scss/h5bp/*.scss
-* /assets/scss/_h5bp.scss
-
-Compass H5bpの構成ファイルです。編集の必要はありません。
-
----
-
 * /assets/scss/base.scss
 
-Compass H5bpの構成ファイル群の読み込み、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
-Compassによるコンパイルにより、CSSフォルダへbase.cssが出力されます。
+Compass, An HTML5 Boilerplate Extension for Compass, Normalize.scss のインポート、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
+コンパイルにより、 CSS フォルダへ base.css が出力されます。
 
 ---
 
 * /assets/scss/core.scss
 
-デフォルト設定では_common.scssを読み込み、コンパイルによりCSSフォルダ内にcore.cssを出力します。自作したその他の_XXXXXX.scssファイルを@import指定することでcore.cssへ統合・圧縮することが可能です。
+デフォルト設定では _common.scss を読み込み、コンパイルにより CSS フォルダ内に core.css を出力します。自作したその他の _XXXXXX.scss ファイルを @import 指定することで core.css へ統合・圧縮することが可能です。
 
 
 ## JavaScriptファイルの構成
@@ -79,31 +76,29 @@ Compassによるコンパイルにより、CSSフォルダへbase.cssが出力�
 * /assets/js/vendor/*.js
 
 各種ライブラリを含んでいます。編集の必要はありません。
+Bower 管理下にある jQuery および Modernizr の出力を行います。
 
 ---
 
-* /assets/js/_plugins.js
+* /assets/js/plugins.js
 
-jQueryプラグインをまとめて記述することを想定したファイルです。
-
----
-
-* /assets/js/base.js
-
-/assets/js/vendor/ga_social_tracking.js, /assets/js/vendor/cssua.min.js, /assets/js/_plugins.jsを統合・圧縮し、コンパイルによりbase.min.jsを出力します。
+jQuery プラグインのインクルード・記述を想定したファイルです。
+Codekit による .css{user:agent;} および Underscore.js のインクルード設定を記入済みです。
 
 ---
 
 * /assets/js/core.js
 
-各種処理を記述するメインファイルの想定です。
+各種処理を記述するメインファイルを記述します。
 
 
 ## License
 
-* [HTML5 Boilerplate](http://html5boilerplate.com/), created by Paul Irish and Divya Manian.
-* [Compass H5bp](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
-* [CssUserAgent (cssua.js)](http://cssuseragent.org), created by Peter Gumeson.
+* [HTML5 Boilerplate](http://html5boilerplate.com/), created by HTML5 Boilerplate.
+* [An HTML5 Boilerplate Extension for Compass](https://github.com/sporkd/compass-h5bp), created by Peter Gumeson.
+* [.css{user:agent;}](https://github.com/mckamey/cssuseragent), created by Stephen M. McKamey.
+* [normalize-scss](https://github.com/JohnAlbin/normalize-scss), created by Nicolas Gallagher and Jonathan Neal and John Albin Wilkins.
+* [underscore.js](https://github.com/jashkenas/underscore), created by Jeremy Ashkenas.
 * [Adobe Blank](http://sourceforge.net/adobe/adobe-blank/), created by Adobe Systems Incorporated.
 
-Copyright (c) 2014 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.
+Copyright (c) 2015 Takehiko Ono. See [LICENSE](https://github.com/onopko/compass-h5bp-codekit-barebone/blob/master/LICENSE.md) for full license.
