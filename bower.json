@@ -2,6 +2,7 @@
 	"name": "compass-h5bp-codekit-barebone",
 	"version": "1.0.0",
 	"dependencies": {
+		"compass-h5bp": "git://github.com/sporkd/compass-h5bp.git",
 		"jquery": "~1.11.2",
 		"modernizr": "~2.8.3",
 		"cssuseragent": "~2.1.28",
