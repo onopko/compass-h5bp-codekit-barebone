@@ -3196,7 +3196,7 @@
 		},
 	"\/_vendor\/underscore\/underscore.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_vendor\/underscore\/underscore.js",
 		"outputAbbreviatedPath": "\/_vendor\/underscore\/underscore.min.js",

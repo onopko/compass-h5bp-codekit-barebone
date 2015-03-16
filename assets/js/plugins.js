@@ -1,5 +1,6 @@
 //@codekit-append "vendor/ga_social_tracking.js"
 //@codekit-append "../../_vendor/cssuseragent/cssua.js"
+//@codekit-append "../../_vendor/underscore/underscore.js"
 
 // Avoid `console` errors in browsers that lack a console.
 (function() {
