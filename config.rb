@@ -19,4 +19,4 @@ color_output = false
 preferred_syntax = :scss
 
 
-# sass_options = { :debug_info => true }
+sass_options = { :debug_info => true }
