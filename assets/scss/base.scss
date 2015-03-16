@@ -1,49 +1,57 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-@import "compass";
-@import "../../_vendor/compass-h5bp/stylesheets/h5bp";
+@import 'compass';
+@import '../../_vendor/compass-h5bp/stylesheets/h5bp';
+@import '../../_vendor/normalize.scss/normalize';
 
-@include h5bp-normalize;
+// @include h5bp-normalize;
 @include h5bp-main;
 @include h5bp-helpers;
 
 
-/* ==========================================================================
-   Basic
-   ========================================================================== */
+/* ==================================================================
+ * $variables
+ * ------------------------------------------------------------------ */
+
+$font-family-yugothic: '游ゴシック体', '游ゴシック', 'Yu Gothic', YuGothic;
+$font-family-yuMincho: '游明朝体', '游明朝', 'Yu Mincho', YuMincho;
+$font-family-hirakaku: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN';
+$font-family-hirakaku-black: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN';
+
+
+/* ==================================================================
+ * Basic
+ * ------------------------------------------------------------------ */
 
 a:focus { outline: none; border: 0; }
 button::-moz-focus-inner { border: 0; }
 
 
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-
-body {
-	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS P Gothic', sans-serif;
-	text-rendering: optimizeLegibility;
-	font-feature-settings: "kern";
-	-webkit-font-feature-settings: "kern";
-	-moz-font-feature-settings: "kern";
-	-moz-font-feature-settings: "kern=1";
-	-webkit-font-smoothing: antialiased;
-}
-
-
-/* ---------------------------------
-*    Font Family
-*/
+/* ==================================================================
+ * Typography
+ * ------------------------------------------------------------------ */
 
 @font-face {
 	font-family: 'Adobe Blank';
 	src: url('/assets/fonts/AdobeBlank.eot'); /* IE9 Compat Modes */
 	src: url('/assets/fonts/AdobeBlank.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('/assets/fonts/AdobeBlank.woff') format('woff'), /* Modern Browsers */
-	     url('/assets/fonts/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
-    font-weight: normal;
-    font-style: normal;
+		 url('/assets/fonts/AdobeBlank.woff') format('woff'), /* Modern Browsers */
+		 url('/assets/fonts/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
 }
+
+body {
+	font-family: $font-family-yugothic, $font-family-hirakaku, 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'kern';
+	-webkit-font-feature-settings: 'kern';
+	-moz-font-feature-settings: 'kern';
+	-moz-font-feature-settings: 'kern=1';
+	-webkit-font-smoothing: antialiased;
+}
+
+
 
 /* ---------------------------------
 *    Font Size

@@ -1,15 +1,45 @@
 @charset "UTF-8";
-/* line 18, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
+/**
+ * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
+ * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
+ * body `font-size` is set using `em` units.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/CodeKit\.app\/Contents\/Resources\/engines\/compass\/compass-core\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\00003106}}
+html {
+  font-size: 100%;
+  line-height: 1.5em; }
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\0000376}}
 html {
   font-family: sans-serif;
+  /* 1 */
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
-/* line 24, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Remove default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\0000388}}
 body {
   margin: 0; }
 
-/* line 36, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003102}}
 article,
 aside,
 details,
@@ -25,61 +55,168 @@ section,
 summary {
   display: block; }
 
-/* line 54, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003123}}
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
-  vertical-align: baseline; }
+  /* 1 */
+  *display: inline;
+  *zoom: 1;
+  vertical-align: baseline;
+  /* 2 */ }
 
-/* line 64, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003142}}
 audio:not([controls]) {
   display: none;
   height: 0; }
 
-/* line 71, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
-[hidden],
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003152}}
+[hidden] {
+  display: none; }
+
+/**
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003161}}
 template {
   display: none; }
 
-/* line 80, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003173}}
 a {
   background-color: transparent; }
 
-/* line 85, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003182}}
 a:active,
 a:hover {
   outline: 0; }
 
-/* line 94, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003194}}
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 99, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003202}}
 b,
 strong {
   font-weight: bold; }
 
-/* line 105, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003212}}
+blockquote {
+  margin: 1.5em 40px; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003221}}
 dfn {
   font-style: italic; }
 
-/* line 111, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003230}}
 h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 2em;
-  margin: 0.67em 0; }
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em; }
 
-/* line 117, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003245}}
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003251}}
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003257}}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003263}}
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003269}}
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003281}}
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 123, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003292}}
+p,
+pre {
+  margin: 1.5em 0; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003302}}
 small {
   font-size: 80%; }
 
-/* line 128, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003310}}
 sub,
 sup {
   font-size: 75%;
@@ -87,37 +224,96 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 136, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003318}}
 sup {
   top: -0.5em; }
 
-/* line 140, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003322}}
 sub {
   bottom: -0.25em; }
 
-/* line 148, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
-img {
-  border: 0; }
+/* Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003334}}
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0; }
 
-/* line 153, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003355}}
+dd {
+  margin: 0 0 0 40px; }
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003363}}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003375}}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003390}}
+img {
+  border: 0;
+  /* Improve image quality when scaled in IE 7. */
+  -ms-interpolation-mode: bicubic; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003403}}
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 161, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003415}}
 figure {
-  margin: 1em 40px; }
+  margin: 1.5em 40px; }
 
-/* line 166, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address differences between Firefox and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003424}}
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
-/* line 173, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Contain overflow in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003433}}
 pre {
   overflow: auto; }
 
-/* line 178, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003441}}
 code,
 kbd,
 pre,
@@ -125,121 +321,245 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-/* line 195, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003465}}
+form {
+  margin: 0; }
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Address `font-family` inconsistency between `textarea` and other form in IE 7
+ * 5. Improve appearance and consistency with IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003479}}
 button,
 input,
 optgroup,
 select,
 textarea {
   color: inherit;
+  /* 1 */
   font: inherit;
-  margin: 0; }
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  *font-family: sans-serif;
+  /* 4 */
+  *vertical-align: middle;
+  /* 5 */ }
 
-/* line 206, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003497}}
 button {
   overflow: visible; }
 
-/* line 214, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003508}}
 button,
 select {
   text-transform: none; }
 
-/* line 224, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003523}}
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  cursor: pointer; }
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
 
-/* line 233, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003538}}
 button[disabled],
 html input[disabled] {
   cursor: default; }
 
-/* line 239, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003547}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 247, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003558}}
 input {
   line-height: normal; }
 
-/* line 255, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003573}}
 input[type="checkbox"],
 input[type="radio"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0; }
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
 
-/* line 264, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003590}}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-/* line 272, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003601}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003611}}
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
 
-/* line 282, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/* line 288, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Define consistent border, margin, and padding.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003621}}
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 0.4625em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 0.9125em;
+  border-left-width: 0.0625em;
+  border-left-style: solid;
+  padding-left: 0.875em;
+  border-right-width: 0.0625em;
+  border-right-style: solid;
+  padding-right: 0.875em; }
 
-/* line 296, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003637}}
 legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
 
-/* line 302, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003651}}
 textarea {
   overflow: auto; }
 
-/* line 308, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003660}}
 optgroup {
   font-weight: bold; }
 
-/* line 316, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003671}}
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 321, ../../_vendor/compass-h5bp/stylesheets/h5bp/_normalize.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/normalize\.scss\/_normalize\.scss}line{font-family:\00003676}}
 td,
 th {
   padding: 0; }
 
-/* line 13, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000313}}
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4; }
 
-/* line 23, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000323}}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 28, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000328}}
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 34, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000334}}
 hr {
   display: block;
   height: 1px;
@@ -248,7 +568,7 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 46, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000346}}
 audio,
 canvas,
 iframe,
@@ -257,22 +577,22 @@ svg,
 video {
   vertical-align: middle; }
 
-/* line 56, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000356}}
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 63, ../../_vendor/compass-h5bp/stylesheets/h5bp/_main.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_main\.scss}line{font-family:\0000363}}
 textarea {
   resize: vertical; }
 
-/* line 4, ../../_vendor/compass-h5bp/stylesheets/h5bp/_helpers.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_helpers\.scss}line{font-family:\000034}}
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 6, ../../_vendor/compass-h5bp/stylesheets/h5bp/_helpers.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_helpers\.scss}line{font-family:\000036}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -282,7 +602,7 @@ textarea {
   padding: 0;
   position: absolute;
   width: 1px; }
-  /* line 35, ../../_vendor/compass-h5bp/stylesheets/h5bp/_helpers.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_helpers\.scss}line{font-family:\0000335}}
   .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
@@ -291,46 +611,36 @@ textarea {
     position: static;
     width: auto; }
 
-/* line 8, ../../_vendor/compass-h5bp/stylesheets/h5bp/_helpers.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_helpers\.scss}line{font-family:\000038}}
 .invisible {
   visibility: hidden; }
 
-/* line 61, ../../_vendor/compass-h5bp/stylesheets/h5bp/_helpers.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_helpers\.scss}line{font-family:\0000361}}
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
-/* line 67, ../../_vendor/compass-h5bp/stylesheets/h5bp/_helpers.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/_vendor\/compass-h5bp\/stylesheets\/h5bp\/_helpers\.scss}line{font-family:\0000367}}
 .clearfix:after {
   clear: both; }
 
-/* ==========================================================================
-   Basic
-   ========================================================================== */
-/* line 15, ../scss/base.scss */
+/* ==================================================================
+ * $variables
+ * ------------------------------------------------------------------ */
+/* ==================================================================
+ * Basic
+ * ------------------------------------------------------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000326}}
 a:focus {
   outline: none;
   border: 0; }
 
-/* line 16, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000327}}
 button::-moz-focus-inner {
   border: 0; }
 
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/* line 23, ../scss/base.scss */
-body {
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS P Gothic', sans-serif;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1";
-  -webkit-font-smoothing: antialiased; }
-
-/* ---------------------------------
-*    Font Family
-*/
+/* ==================================================================
+ * Typography
+ * ------------------------------------------------------------------ */
 @font-face {
   font-family: 'Adobe Blank';
   src: url("/assets/fonts/AdobeBlank.eot");
@@ -339,6 +649,16 @@ body {
   /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000344}}
+body {
+  font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern';
+  -webkit-font-feature-settings: 'kern';
+  -moz-font-feature-settings: 'kern';
+  -moz-font-feature-settings: 'kern=1';
+  -webkit-font-smoothing: antialiased; }
+
 /* ---------------------------------
 *    Font Size
 *
@@ -349,26 +669,26 @@ body {
 *    108% = 14px    |    154% = 20px |    200% = 26px
 *    116% = 15px    |    162% = 21px |
 */
-/* line 59, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000367}}
 .x-large {
   font-size: 139%; }
 
-/* line 60, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000368}}
 .large {
   font-size: 124%; }
 
-/* line 61, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000369}}
 .mid {
   font-size: 108%; }
 
-/* line 62, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000370}}
 .small {
   font-size: 93%; }
 
-/* line 63, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000371}}
 .x-small {
   font-size: 85%; }
 
-/* line 64, ../scss/base.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/onopko\/Dropbox\/Documents\/compass-h5bp-codekit-barebone\/assets\/scss\/base\.scss}line{font-family:\0000372}}
 .xx-small {
   font-size: 77%; }
