@@ -23,6 +23,5 @@
 
 // Place any jQuery/helper plugins in here.
 
-//@codekit-append "vendor/ga_social_tracking.js"
 //@codekit-append "../../_vendor/cssuseragent/cssua.js"
 //@codekit-append "../../_vendor/underscore/underscore.js"

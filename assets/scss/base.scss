@@ -51,22 +51,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-
-
-/* ---------------------------------
-*    Font Size
-*
-*     77% = 10px    |    124% = 16px |    169% = 22px
-*     85% = 11px    |    131% = 17px |    177% = 23px
-*     93% = 12px    |    139% = 18px |    185% = 24px
-*    100% = 13px    |    147% = 19px |    192% = 25px
-*    108% = 14px    |    154% = 20px |    200% = 26px
-*    116% = 15px    |    162% = 21px |
-*/
-
-.x-large   { font-size: 139%; }
-.large     { font-size: 124%; }
-.mid       { font-size: 108%; }
-.small     { font-size:  93%; }
-.x-small   { font-size:  85%; }
-.xx-small  { font-size:  77%; }
+.x-large { font-size: 2    * $base-font-size; }
+.large   { font-size: 1.5  * $base-font-size; }
+.mid     { font-size: 1.17 * $base-font-size; }
+.normal  { font-size: 1    * $base-font-size; }
+.small   { font-size: 0.83 * $base-font-size; }
+.x-small { font-size: 0.67 * $base-font-size; }
