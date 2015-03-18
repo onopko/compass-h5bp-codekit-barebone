@@ -7,6 +7,6 @@
     "modernizr": "~2.8.3",
     "cssuseragent": "~2.1.28",
     "underscore": "~1.8.2",
-    "normalize.scss": "~3.0.2+normalize.3.0.2"
+    "normalize.scss": "~3.0.2"
   }
 }
