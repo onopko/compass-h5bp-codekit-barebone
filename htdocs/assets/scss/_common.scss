@@ -41,7 +41,7 @@ $font-family--helvetica       : 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
 $font-family--helvetica--bold : 'HelveticaNeueBold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'HelveticaBold', 'Helvetica-Bold', 'Helvetica Bold', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
 $font-family--helvetica--black: 'HelveticaNeueBlack', 'HelveticaNeue-Black', 'Helvetica Neue Black', 'HelveticaBlack', 'Helvetica-Black', 'Helvetica Black', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
 
-$font-family--default         : "#{$font-family--helvetica}", "#{$font-family--hirakaku}", 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$font-family--default         : #{$font-family--helvetica}, #{$font-family--hirakaku}, 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 
 
 /* ==================================================================
@@ -223,23 +223,23 @@ $visibilityDefault: hidden !default;
 }
 
 @mixin keyframes($animation-name) {
-	@-webkit-keyframes "#{$animation-name}" {
+	@-webkit-keyframes #{$animation-name} {
 		@content;
 	}
 
-	@-moz-keyframes "#{$animation-name}" {
+	@-moz-keyframes #{$animation-name} {
 		@content;
 	}
 
-	@-ms-keyframes "#{$animation-name}" {
+	@-ms-keyframes #{$animation-name} {
 		@content;
 	}
 
-	@-o-keyframes "#{$animation-name}" {
+	@-o-keyframes #{$animation-name} {
 		@content;
 	}
 
-	@keyframes "#{$animation-name}" {
+	@keyframes #{$animation-name} {
 		@content;
 	}
 }

@@ -696,7 +696,7 @@ html {
   font-style: normal; }
 /* line 268, ../scss/_common.scss */
 body {
-  font-family: "HelveticaNeue, Helvetica Neue, Helvetica", "ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: HelveticaNeue, Helvetica Neue, Helvetica, ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern';
   -webkit-font-feature-settings: 'kern';
