@@ -1,5 +1,5 @@
 /.sass-cache/
-/_vendor/
+/bower_components/
 
 # Ignore OS generated files #
 .DS_Store*
