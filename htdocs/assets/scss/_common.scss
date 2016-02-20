@@ -1,11 +1,95 @@
+@import 'compass';
+@import '../../../bower_components/compass-h5bp/stylesheets/h5bp';
+@import '../../../bower_components/normalize.scss/normalize';
+
+
+// @include h5bp-normalize;
+@include h5bp-main;
+@include h5bp-browserupgrade;
+// @include h5bp-errorpage;
+@include h5bp-custom;
+@include h5bp-helpers;
+// @include h5bp-media;
+
+
 /* ==================================================================
- *
- * Mixin
- *
+ * Compass Setting
+ * ------------------------------------------------------------------ */
+
+$experimental-support-for-svg: true;
+$base-font-size              : 14px;
+$base-line-height            : 21px;
+$rhythm-unit                 : 'rem';
+
+@include establish-baseline;
+
+
+/* ==================================================================
+ * $variables
  * ------------------------------------------------------------------ */
 
 /* ---------------------------------
- *   CSS Image Sprite   */
+ *   Font   */
+
+$font-family--hirakaku        : 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN';
+$font-family--hirakaku-black  : 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN';
+
+$font-family--yugothic        : '游ゴシック体', '游ゴシック', 'Yu Gothic', YuGothic;
+$font-family--yuMincho        : '游明朝体', '游明朝', 'Yu Mincho', YuMincho;
+
+$font-family--helvetica       : 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
+$font-family--helvetica--bold : 'HelveticaNeueBold', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', 'HelveticaBold', 'Helvetica-Bold', 'Helvetica Bold', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
+$font-family--helvetica--black: 'HelveticaNeueBlack', 'HelveticaNeue-Black', 'Helvetica Neue Black', 'HelveticaBlack', 'Helvetica-Black', 'Helvetica Black', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
+
+$font-family--default         : "#{$font-family--helvetica}", "#{$font-family--hirakaku}", 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+
+/* ==================================================================
+ *
+ * MIXIN
+ *
+ * ------------------------------------------------------------------ */
+
+/* ==================================================================
+ * REM Font Size
+ * ------------------------------------------------------------------ */
+
+@mixin compass-font-size ($size) {
+    @include output-rhythm(font-size, convert-length($size, $rhythm-unit));
+}
+
+
+/* ==================================================================
+ * Responsive Layout
+ * ------------------------------------------------------------------ */
+
+@mixin mq--pc-normal {
+    @media only screen and (min-width: 641px) and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin mq--pc {
+    @media only screen and (min-width: 641px) and (min-device-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mq--sp {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 640px), (max-width: 640px) {
+        @content;
+    }
+
+	@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+
+/* ==================================================================
+ * CSS Image Sprite
+ * ------------------------------------------------------------------ */
+
 @mixin sprite ($_src, $_src_2x, $_width, $_height, $_left, $_top, $_display: block) {
     display: $_display;
 
@@ -23,3 +107,185 @@
         }
     }
 }
+
+
+/* ==================================================================
+ * Vertical Middle
+ * ------------------------------------------------------------------ */
+
+@mixin verticalMiddle ($_h) {
+	height: $_h;
+	vertical-align: middle;
+	line-height: $_h;
+}
+
+
+/* ==================================================================
+ * Line Clamp
+ * ------------------------------------------------------------------ */
+
+@mixin line-clamp ($_line) {
+	display: -webkit-box;
+
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $_line;
+}
+
+
+/* ==================================================================
+ * hover
+ * ------------------------------------------------------------------ */
+
+@mixin hover () {
+	@include mq--pc {
+		&:hover {
+			@content;
+		}
+	}
+	&.hover {
+		@content;
+	}
+}
+
+
+/* ==================================================================
+ * CSS Animation
+ * ------------------------------------------------------------------ */
+
+// duration     Specifies how many seconds or milliseconds an animation takes to complete one cycle. Default 0
+// delay        Specifies when the animation will start. Default 0
+// function     Describes how the animation will progress over one cycle of its duration. Default "ease"
+// count        Specifies the number of times an animation is played. Default 1
+// fill-mode    Specifies if the effects of an animation are before the animation starts and after it ends.
+// visibility   Determines whether or not a transformed element is visible when it is not facing the screen.
+
+$countDefault     : 1s !default;
+$durationDefault  : 1s !default;
+$delayDefault     : 0s !default;
+$functionDefault  : ease !default;
+$fillDefault      : both;
+$visibilityDefault: hidden !default;
+
+@mixin count($count: 1) {
+  -webkit-animation-iteration-count: $count;
+     -moz-animation-iteration-count: $count;
+      -ms-animation-iteration-count: $count;
+       -o-animation-iteration-count: $count;
+          animation-iteration-count: $count;
+}
+
+@mixin duration($duration: 1s) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+      -ms-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+}
+
+@mixin delay($delay: .2s) {
+  -webkit-animation-delay: $delay;
+     -moz-animation-delay: $delay;
+      -ms-animation-delay: $delay;
+       -o-animation-delay: $delay;
+          animation-delay: $delay;
+}
+
+@mixin function($function: ease) {
+  -webkit-animation-timing-function: $function;
+     -moz-animation-timing-function: $function;
+      -ms-animation-timing-function: $function;
+       -o-animation-timing-function: $function;
+          animation-timing-function: $function;
+}
+
+@mixin fill-mode($fill: both) {
+  -webkit-animation-fill-mode: $fill;
+     -moz-animation-fill-mode: $fill;
+      -ms-animation-fill-mode: $fill;
+       -o-animation-fill-mode: $fill;
+          animation-fill-mode: $fill;
+}
+
+@mixin visibility($visibility: hidden) {
+  -webkit-backface-visibility: $visibility;
+     -moz-backface-visibility: $visibility;
+      -ms-backface-visibility: $visibility;
+       -o-backface-visibility: $visibility;
+          backface-visibility: $visibility;
+}
+
+@mixin animation-name($animation-name) {
+  -webkit-animation-name: $animation-name;
+     -moz-animation-name: $animation-name;
+      -ms-animation-name: $animation-name;
+       -o-animation-name: $animation-name;
+          animation-name: $animation-name;
+}
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes "#{$animation-name}" {
+		@content;
+	}
+
+	@-moz-keyframes "#{$animation-name}" {
+		@content;
+	}
+
+	@-ms-keyframes "#{$animation-name}" {
+		@content;
+	}
+
+	@-o-keyframes "#{$animation-name}" {
+		@content;
+	}
+
+	@keyframes "#{$animation-name}" {
+		@content;
+	}
+}
+
+
+/* ==================================================================
+ *
+ * BASIC
+ *
+ * ------------------------------------------------------------------ */
+
+/* ==================================================================
+ * Typography
+ * ------------------------------------------------------------------ */
+
+@font-face {
+	font-family: 'Adobe Blank';
+	src: url('/assets/fonts/AdobeBlank.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/AdobeBlank.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/assets/fonts/AdobeBlank.woff') format('woff'), /* Modern Browsers */
+		 url('/assets/fonts/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: $font-family--default;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'kern';
+	-webkit-font-feature-settings: 'kern';
+	-moz-font-feature-settings: 'kern';
+	-moz-font-feature-settings: 'kern=1';
+	-webkit-font-smoothing: antialiased;
+}
+
+.x-large { @include compass-font-size(2    * $base-font-size); }
+.large   { @include compass-font-size(1.5  * $base-font-size); }
+.mid     { @include compass-font-size(1.17 * $base-font-size); }
+.normal  { @include compass-font-size(1    * $base-font-size); }
+.small   { @include compass-font-size(0.83 * $base-font-size); }
+.x-small { @include compass-font-size(0.67 * $base-font-size); }
+
+
+/* ==================================================================
+ * Link Border
+ * ------------------------------------------------------------------ */
+
+a:focus { outline: none; border: 0; }
+button::-moz-focus-inner { border: 0; }
