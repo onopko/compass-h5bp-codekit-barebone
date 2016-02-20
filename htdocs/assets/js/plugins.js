@@ -23,5 +23,9 @@
 
 // Place any jQuery/helper plugins in here.
 
-//@codekit-append "../../_vendor/cssuseragent/cssua.js"
-//@codekit-append "../../_vendor/underscore/underscore.js"
+//@codekit-append "../../bower_components/cssuseragent/cssua.js"
+//@codekit-append "../../bower_components/underscore/underscore.js"
+//@codekit-append "../../bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js"
+//@codekit-append "../../bower_components/eventEmitter/EventEmitter.js"
+//@codekit-append "../../bower_components/imagesloaded/imagesloaded.js"
+//@codekit-append "../../bower_components/velocity/velocity.js"
