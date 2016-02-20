@@ -11,6 +11,7 @@
     "jquery-smooth-scroll": "~1.5.5",
     "normalize.scss": "~3.0.2",
     "ev-emitter": "^1.0.2",
-    "velocity": "^1.2.3"
+    "velocity": "^1.2.3",
+    "delayDo": "delay-do#^1.0.0"
   }
 }
