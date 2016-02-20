@@ -24,6 +24,7 @@
 		"Gruntfile.js",
 		"package.json",
 		"node_modeles/**",
+		"bower_components/**",
 		"sftp-config.json",
 		"Thumbs.db",
 		"*.coffee",
