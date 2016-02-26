@@ -60,6 +60,34 @@ $font-family--default         : #{$font-family--helvetica}, #{$font-family--hira
 
 
 /* ==================================================================
+ * Font Smoothing
+ * ------------------------------------------------------------------ */
+
+@mixin font-smoothing ($_mode: true) {
+    @if $_mode == true {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: unset;
+    }
+}
+
+
+/* ==================================================================
+ * Font Feature Settings
+ * ------------------------------------------------------------------ */
+
+@mixin font-feature-settings-kirn ($_mode: 'kirn') {
+    font-feature-settings: '#{$_mode}';
+    -webkit-font-feature-settings: '#{$_mode}';
+    -moz-font-feature-settings: '#{$_mode}';
+    -moz-font-feature-settings: '#{$_mode}=1';
+}
+
+
+/* ==================================================================
  * Responsive Layout
  * ------------------------------------------------------------------ */
 
@@ -268,12 +296,9 @@ $visibilityDefault: hidden !default;
 body {
 	font-family: $font-family--default;
 	text-rendering: optimizeLegibility;
-	font-feature-settings: 'kern';
-	-webkit-font-feature-settings: 'kern';
-	-moz-font-feature-settings: 'kern';
-	-moz-font-feature-settings: 'kern=1';
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+    @include font-feature-settings-kirn;
+    @include font-smoothing();
 }
 
 .x-large { @include compass-font-size(2    * $base-font-size); }

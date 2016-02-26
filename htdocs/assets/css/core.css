@@ -661,6 +661,12 @@ html {
  * REM Font Size
  * ------------------------------------------------------------------ */
 /* ==================================================================
+ * Font Smoothing
+ * ------------------------------------------------------------------ */
+/* ==================================================================
+ * Font Feature Settings
+ * ------------------------------------------------------------------ */
+/* ==================================================================
  * Responsive Layout
  * ------------------------------------------------------------------ */
 /* ==================================================================
@@ -694,42 +700,43 @@ html {
   /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal; }
-/* line 268, ../scss/_common.scss */
+/* line 296, ../scss/_common.scss */
 body {
   font-family: HelveticaNeue, Helvetica Neue, Helvetica, ヒラギノ角ゴ ProN W3, Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern';
-  -webkit-font-feature-settings: 'kern';
-  -moz-font-feature-settings: 'kern';
-  -moz-font-feature-settings: 'kern=1';
-  -webkit-font-smoothing: antialiased; }
+  font-feature-settings: "kirn";
+  -webkit-font-feature-settings: "kirn";
+  -moz-font-feature-settings: "kirn";
+  -moz-font-feature-settings: "kirn=1";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-/* line 278, ../scss/_common.scss */
+/* line 304, ../scss/_common.scss */
 .x-large {
   font-size: 28px;
   font-size: 2rem; }
 
-/* line 279, ../scss/_common.scss */
+/* line 305, ../scss/_common.scss */
 .large {
   font-size: 21px;
   font-size: 1.5rem; }
 
-/* line 280, ../scss/_common.scss */
+/* line 306, ../scss/_common.scss */
 .mid {
   font-size: 16px;
   font-size: 1.17rem; }
 
-/* line 281, ../scss/_common.scss */
+/* line 307, ../scss/_common.scss */
 .normal {
   font-size: 14px;
   font-size: 1rem; }
 
-/* line 282, ../scss/_common.scss */
+/* line 308, ../scss/_common.scss */
 .small {
   font-size: 12px;
   font-size: 0.83rem; }
 
-/* line 283, ../scss/_common.scss */
+/* line 309, ../scss/_common.scss */
 .x-small {
   font-size: 9px;
   font-size: 0.67rem; }
@@ -737,12 +744,12 @@ body {
 /* ==================================================================
  * Link Border
  * ------------------------------------------------------------------ */
-/* line 290, ../scss/_common.scss */
+/* line 316, ../scss/_common.scss */
 a:focus {
   outline: none;
   border: 0; }
 
-/* line 291, ../scss/_common.scss */
+/* line 317, ../scss/_common.scss */
 button::-moz-focus-inner {
   border: 0; }
 
