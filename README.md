@@ -39,12 +39,12 @@ Compass H5BP Codekit Barebone は [Codekit](https://incident57.com/codekit/) の
 
 ```ruby
 http_path        = "/"
-css_dir          = "assets/css"
-sass_dir         = "assets/scss"
-images_dir       = "assets/images"
-javascripts_dir  = "assets/js"
-fonts_dir        = "assets/fonts"
-httpimagespath   = "/assets/images"
+css_dir          = "htdocs/assets/css"
+sass_dir         = "htdocs/assets/scss"
+images_dir       = "htdocs/assets/images"
+javascripts_dir  = "htdocs/assets/js"
+fonts_dir        = "htdocs/assets/fonts"
+httpimagespath   = "assets/images"
 
 output_style     = :compressed
 
@@ -59,16 +59,15 @@ sass_options     = { :debug_info => true }
 
 ## SCSSファイルの構成
 
-* /assets/scss/base.scss
+* /assets/scss/core.scss
 
-Compass, An HTML5 Boilerplate Extension for Compass, Normalize.scss のインポート、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
-コンパイルにより、 CSS フォルダへ base.css が出力されます。
+_common, _plugins, _component, _utility, _project を統合します。
 
 ---
 
-* /assets/scss/core.scss
+* /assets/scss/_common.scss
 
-デフォルト設定では _common.scss を読み込み、コンパイルにより CSS フォルダ内に core.css を出力します。自作したその他の _XXXXXX.scss ファイルを @import 指定することで core.css へ統合・圧縮することが可能です。
+Compass, An HTML5 Boilerplate Extension for Compass, Normalize.scss のインポート、およびレイアウト・タイポグラフィに関わる最低限の設定を追加しています。
 
 
 ## JavaScriptファイルの構成

@@ -38,12 +38,12 @@ And useful libraries and many helpful tips are included, too.
 
 ```ruby
 http_path        = "/"
-css_dir          = "assets/css"
-sass_dir         = "assets/scss"
-images_dir       = "assets/images"
-javascripts_dir  = "assets/js"
-fonts_dir        = "assets/fonts"
-httpimagespath   = "/assets/images"
+css_dir          = "htdocs/assets/css"
+sass_dir         = "htdocs/assets/scss"
+images_dir       = "htdocs/assets/images"
+javascripts_dir  = "htdocs/assets/js"
+fonts_dir        = "htdocs/assets/fonts"
+httpimagespath   = "assets/images"
 
 output_style     = :compressed
 
