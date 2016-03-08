@@ -118,7 +118,7 @@ $font-family--default         : #{$font-family--helvetica}, #{$font-family--hira
  * CSS Image Sprite
  * ------------------------------------------------------------------ */
 
-@mixin sprite ($_src, $_src_2x, $_width, $_height, $_left, $_top, $_display: block) {
+@mixin sprite ($_src, $_src_2x: false, $_width, $_height, $_left, $_top, $_display: block) {
     display: $_display;
 
     width: $_width;
