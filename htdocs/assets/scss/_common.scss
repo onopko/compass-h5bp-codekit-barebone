@@ -165,12 +165,11 @@ $font-family--default         : #{$font-family--helvetica}, #{$font-family--hira
  * ------------------------------------------------------------------ */
 
 @mixin hover () {
-	@include mq--pc {
-		&:hover {
-			@content;
-		}
+	@at-root .no-touch &:hover {
+		@content;
 	}
-	&.hover {
+
+	@at-root .touch &.hover {
 		@content;
 	}
 }
