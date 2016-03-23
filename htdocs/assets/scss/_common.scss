@@ -186,13 +186,6 @@ $font-family--default         : #{$font-family--helvetica}, #{$font-family--hira
 // fill-mode    Specifies if the effects of an animation are before the animation starts and after it ends.
 // visibility   Determines whether or not a transformed element is visible when it is not facing the screen.
 
-$countDefault     : 1s !default;
-$durationDefault  : 1s !default;
-$delayDefault     : 0s !default;
-$functionDefault  : ease !default;
-$fillDefault      : both;
-$visibilityDefault: hidden !default;
-
 @mixin count($count: 1) {
   -webkit-animation-iteration-count: $count;
      -moz-animation-iteration-count: $count;
