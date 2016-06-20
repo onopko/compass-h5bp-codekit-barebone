@@ -1,3 +1,4 @@
+/.codekit-cache/
 /.sass-cache/
 /bower_components/
 /node_modules/
@@ -18,5 +19,8 @@ Thumbs.db
 *.tar
 *.zip
 
-# Ignore SFTP Package Setting #
-sftp-config.json
+# Ignore Atom "remote-sync" Package Setting #
+.remote-sync.json
+
+# Ignore Codekit Setting #
+config.codekit
