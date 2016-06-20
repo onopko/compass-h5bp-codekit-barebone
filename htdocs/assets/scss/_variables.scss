@@ -17,8 +17,8 @@ $font-family--hirakaku-black  : "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic
 $font-family--yugothic        : "游ゴシック体", "游ゴシック", "Yu Gothic", YuGothic;
 $font-family--yuMincho        : "游明朝体", "游明朝", "Yu Mincho", YuMincho;
 
-$font-family--helvetica       : 'HelveticaNeue', 'Helvetica Neue', 'Helvetica';
-$font-family--helvetica--bold : 'HelveticaNeueBold', 'HelveticaNeue-Bold', "Helvetica Neue Bold", 'HelveticaBold', 'Helvetica-Bold', "Helvetica Bold", 'HelveticaNeue', "Helvetica Neue", 'Helvetica';
-$font-family--helvetica--black: 'HelveticaNeueBlack', 'HelveticaNeue-Black', "Helvetica Neue Black", 'HelveticaBlack', 'Helvetica-Black', "Helvetica Black", 'HelveticaNeue', "Helvetica Neue", 'Helvetica';
+$font-family--helvetica       : HelveticaNeue, "Helvetica Neue", Helvetica;
+$font-family--helvetica--bold : HelveticaNeueBold, 'HelveticaNeue-Bold', "Helvetica Neue Bold", HelveticaBold, 'Helvetica-Bold', "Helvetica Bold", #{$font-family--helvetica};
+$font-family--helvetica--black: HelveticaNeueBlack, 'HelveticaNeue-Black', "Helvetica Neue Black", HelveticaBlack, 'Helvetica-Black', "Helvetica Black", #{$font-family--helvetica};
 
-$font-family--default         : #{$font-family--helvetica}, #{$font-family--hirakaku}, "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-family--default         : #{$font-family--helvetica}, YakuHanJP, #{$font-family--hirakaku}, "メイリオ", Meiryo, Osaka, "MS UI Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;

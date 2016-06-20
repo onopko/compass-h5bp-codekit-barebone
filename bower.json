@@ -1,18 +1,19 @@
 {
-    "name": "compass-h5bp-codekit-barebone",
-    "version": "1.0.0",
-    "dependencies": {
-        "compass-h5bp": "git://github.com/sporkd/compass-h5bp.git",
-        "cssuseragent": "~2.1.28",
-        "delayDo": "^1.2.0",
-        "ev-emitter": "^1.0.2",
-        "imagesloaded": "git://github.com/desandro/imagesloaded.git",
-        "jquery-smooth-scroll": "~1.5.5",
-        "jquery": "~1.11.2",
-        "modernizr": "~2.8.3",
-        "normalize.scss": "~3.0.2",
-        "setAnimationFrameTimeout": "^1.0.0",
-        "underscore": "~1.8.2",
-        "velocity": "^1.2.3"
-    }
+  "name": "compass-h5bp-codekit-barebone",
+  "version": "1.0.0",
+  "dependencies": {
+    "compass-h5bp": "git://github.com/sporkd/compass-h5bp.git",
+    "cssuseragent": "~2.1.28",
+    "delayDo": "^1.2.0",
+    "ev-emitter": "^1.0.2",
+    "imagesloaded": "git://github.com/desandro/imagesloaded.git",
+    "jquery-smooth-scroll": "~1.5.5",
+    "jquery": "~1.11.2",
+    "modernizr": "~2.8.3",
+    "normalize.scss": "~3.0.2",
+    "setAnimationFrameTimeout": "^1.0.0",
+    "underscore": "~1.8.2",
+    "velocity": "^1.2.3",
+    "yakuhanjp": "^1.2.1"
+  }
 }
