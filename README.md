@@ -1,20 +1,20 @@
-# Compass H5BP Codekit Barebone
+# Compass H5BP CodeKit Barebone
 
-Compass H5BP Codekit Barebone は [Codekit](https://incident57.com/codekit/) のために用意したHTML5フロントエンド テンプレートです。
+Compass H5BP CodeKit Barebone は [CodeKit](https://incident57.com/codekit/) のために用意したHTML5フロントエンド テンプレートです。
 
 [HTML5 Boilerplate](http://html5boilerplate.com/) をベースとし、 [Compass H5BP](https://github.com/sporkd/compass-h5bp) による Compass 対応 CSS への最適化の他、有用なライブラリや様々な Tips を含んでいます。
-ダウンロードしてすぐに Codekit による Compass + Sass コーディングを開始できることを目的としています。
+ダウンロードしてすぐに CodeKit による Compass + Sass コーディングを開始できることを目的としています。
 
 
 ## システム要件
 
-* [Codekit](https://incident57.com/codekit/)
+* [CodeKit](https://incident57.com/codekit/)
 * [Bower](http://bower.io)
 
 
 ## 特徴
 
-* Codekit の環境設定済み。
+* CodeKit の環境設定済み。
 * Compass の環境設定済み。
 * bower.json によるリソース管理。
 * .css{user:agent;} と Underscore.js を組み込み済み。
@@ -29,9 +29,9 @@ Compass H5BP Codekit Barebone は [Codekit](https://incident57.com/codekit/) の
 
 ## 使用方法
 
-0. Codekit および Bower をインストールし、システム要件を満たしてください。
+0. CodeKit および Bower をインストールし、システム要件を満たしてください。
 1. [ZIP をダウンロード](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip) して解凍してください。
-2. Codekit へドロップしてください。
+2. CodeKit へドロップしてください。
 3. That’s it!
 
 
@@ -82,7 +82,7 @@ Bower 管理下にある jQuery および Modernizr の出力を行います。
 * /assets/js/plugins.js
 
 jQuery プラグインのインクルード・記述を想定したファイルです。
-Codekit による .css{user:agent;} および Underscore.js のインクルード設定を記入済みです。
+CodeKit による .css{user:agent;} および Underscore.js のインクルード設定を記入済みです。
 
 ---
 

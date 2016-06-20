@@ -1,19 +1,19 @@
-# Compass H5bp Codekit Barebone
+# Compass H5BP CodeKit Barebone
 
-Compass H5bp Codekit Barebone is a professional front-end template for [Codekit](https://incident57.com/codekit/).
-It’s based on [HTML5 Boilerplate](http://html5boilerplate.com/) and is optimized for Compass by [Compass H5bp](https://github.com/sporkd/compass-h5bp) compass extention.
+Compass H5BP CodeKit Barebone is a professional front-end template for [CodeKit](https://incident57.com/codekit/).
+It’s based on [HTML5 Boilerplate](http://html5boilerplate.com/) and is optimized for Compass by [Compass H5BP](https://github.com/sporkd/compass-h5bp) compass extention.
 And useful libraries and many helpful tips are included, too.
 
 
 ## System Requirements
 
-* [Codekit](https://incident57.com/codekit/)
+* [CodeKit](https://incident57.com/codekit/)
 * [Bower](http://bower.io)
 
 
 ## Features
 
-* Codekit ready.
+* CodeKit ready.
 * Compass ready.
 * Resource management by Bower.
 * .css{user:agent;} and Underscore.js ready.
@@ -30,7 +30,7 @@ And useful libraries and many helpful tips are included, too.
 
 0. Install and setup the system requirements.
 1. [Download ZIP](https://github.com/onopko/compass-h5bp-codekit-barebone/archive/master.zip) and unzip it.
-2. Drop unzipped folder to Codekit.
+2. Drop unzipped folder to CodeKit.
 3. That’s it!
 
 
