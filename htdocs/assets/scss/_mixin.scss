@@ -1,32 +1,10 @@
-@import 'compass';
-@import '../../../bower_components/compass-h5bp/stylesheets/h5bp';
-@import '../../../bower_components/normalize.scss/normalize';
-
-
-// @include h5bp-normalize;
-@include h5bp-main;
-// @include h5bp-browserupgrade;
-// @include h5bp-errorpage;
-@include h5bp-custom;
-@include h5bp-helpers;
-// @include h5bp-media;
-
-
-/* ==================================================================
- * Compass Setting
- * ------------------------------------------------------------------ */
-
-$experimental-support-for-svg: true;
-$base-font-size              : 14px;
-$base-line-height            : 21px;
-$rhythm-unit                 : 'rem';
-
-@include establish-baseline;
-
-
 /* ==================================================================
  *
  * MIXIN
+ *
+ * ------------------------------------------------------------------
+ *
+ *
  *
  * ------------------------------------------------------------------ */
 
@@ -47,8 +25,7 @@ $rhythm-unit                 : 'rem';
     @if $_mode == true {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-    }
-    @else {
+    } @else {
         -webkit-font-smoothing: subpixel-antialiased;
         -moz-osx-font-smoothing: unset;
     }
@@ -59,23 +36,15 @@ $rhythm-unit                 : 'rem';
  * Font Feature Settings
  * ------------------------------------------------------------------ */
 
-@mixin font-feature-settings-kirn ($_mode: 'kirn') {
-    font-feature-settings: '#{$_mode}';
-    -webkit-font-feature-settings: '#{$_mode}';
-    -moz-font-feature-settings: '#{$_mode}';
-    -moz-font-feature-settings: '#{$_mode}=1';
+@mixin font-feature-settings ($_mode: 'kern') {
+    font-feature-settings: '#{$_mode}' 1;
+    -webkit-font-feature-settings: '#{$_mode}' 1;
 }
 
 
 /* ==================================================================
  * Responsive Layout
  * ------------------------------------------------------------------ */
-
-@mixin mq--pc-normal {
-    @media only screen and (min-width: 641px) and (max-width: 1280px) {
-        @content;
-    }
-}
 
 @mixin mq--pc {
     @media only screen and (min-width: 641px) and (min-device-width: 768px) {
@@ -170,7 +139,6 @@ $rhythm-unit                 : 'rem';
   -webkit-animation-iteration-count: $count;
      -moz-animation-iteration-count: $count;
       -ms-animation-iteration-count: $count;
-       -o-animation-iteration-count: $count;
           animation-iteration-count: $count;
 }
 
@@ -178,7 +146,6 @@ $rhythm-unit                 : 'rem';
   -webkit-animation-duration: $duration;
      -moz-animation-duration: $duration;
       -ms-animation-duration: $duration;
-       -o-animation-duration: $duration;
           animation-duration: $duration;
 }
 
@@ -186,7 +153,6 @@ $rhythm-unit                 : 'rem';
   -webkit-animation-delay: $delay;
      -moz-animation-delay: $delay;
       -ms-animation-delay: $delay;
-       -o-animation-delay: $delay;
           animation-delay: $delay;
 }
 
@@ -194,7 +160,6 @@ $rhythm-unit                 : 'rem';
   -webkit-animation-timing-function: $function;
      -moz-animation-timing-function: $function;
       -ms-animation-timing-function: $function;
-       -o-animation-timing-function: $function;
           animation-timing-function: $function;
 }
 
@@ -202,7 +167,6 @@ $rhythm-unit                 : 'rem';
   -webkit-animation-fill-mode: $fill;
      -moz-animation-fill-mode: $fill;
       -ms-animation-fill-mode: $fill;
-       -o-animation-fill-mode: $fill;
           animation-fill-mode: $fill;
 }
 
@@ -210,7 +174,6 @@ $rhythm-unit                 : 'rem';
   -webkit-animation-name: $animation-name;
      -moz-animation-name: $animation-name;
       -ms-animation-name: $animation-name;
-       -o-animation-name: $animation-name;
           animation-name: $animation-name;
 }
 
@@ -238,105 +201,23 @@ $rhythm-unit                 : 'rem';
 
 
 /* ==================================================================
- *
- * BASIC
- *
+ * Image Rendering
  * ------------------------------------------------------------------ */
 
-/* ==================================================================
- * Typography
- * ------------------------------------------------------------------ */
-
-/* ---------------------------------
- *   Adobe Blank   */
-@font-face {
-	font-family: 'Adobe Blank';
-	src: url('/assets/fonts/AdobeBlank.eot'); /* IE9 Compat Modes */
-	src: url('/assets/fonts/AdobeBlank.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('/assets/fonts/AdobeBlank.woff') format('woff'), /* Modern Browsers */
-		 url('/assets/fonts/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
-	font-weight: normal;
-	font-style: normal;
+// https://gehrcke.de/2014/11/css-crispy-downscaled-images/
+@mixin image-crisp () {
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
 }
 
-/* ---------------------------------
- *   Yaku Han JP   */
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 100;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Thin.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Thin.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Thin.eot');
+// https://builtvisible.com/image-scaling-in-css/
+@mixin image-pixelated () {
+	-ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
+	image-rendering: -webkit-optimize-contrast; // Safari 6, UC Browser 9.9
+	image-rendering: -webkit-crisp-edges; // Safari 7+
+	image-rendering: -moz-crisp-edges; // Firefox 3.6+
+	image-rendering: -o-crisp-edges; // Opera 12
+	image-rendering: pixelated; // Chrome 41+ and Opera 26+
 }
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 200;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Light.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Light.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Light.eot');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 300;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.eot');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Regular.eot');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 500;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Medium.eot');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.eot');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 900;
-    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Black.woff2') format('woff2'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Black.woff') format('woff'),
-    url('/assets/fonts/YakuHanJP/YakuHanJP-Black.eot');
-}
-
-body {
-	font-family: $font-family--default;
-	text-rendering: optimizeLegibility;
-
-    @include font-feature-settings-kirn;
-    @include font-smoothing();
-}
-
-.x-large { @include compass-font-size(2    * $base-font-size); }
-.large   { @include compass-font-size(1.5  * $base-font-size); }
-.mid     { @include compass-font-size(1.17 * $base-font-size); }
-.normal  { @include compass-font-size(1    * $base-font-size); }
-.small   { @include compass-font-size(0.83 * $base-font-size); }
-.x-small { @include compass-font-size(0.67 * $base-font-size); }
-
-
-/* ==================================================================
- * Link Border
- * ------------------------------------------------------------------ */
-
-a:focus { outline: none; border: 0; }
-button::-moz-focus-inner { border: 0; }

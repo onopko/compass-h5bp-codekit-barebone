@@ -7,3 +7,45 @@
  *
  *
  * ------------------------------------------------------------------ */
+
+.u-br {
+    @include mq--pc {
+        font-size: 1px;
+        line-height: 100%;
+		text-align: left;
+
+		@include hide-text;
+
+        &:before {
+            content: '\A';
+            white-space: pre;
+            font-size: 1px;
+            line-height: 100%;
+        }
+    }
+
+    &--sp {
+        @include mq--sp {
+            font-size: 1px;
+            line-height: 100%;
+			text-align: left;
+
+			@include hide-text;
+
+            &:before {
+                content: '\A';
+                white-space: pre;
+                font-size: 1px;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+.u-clearfix {
+    @include pie-clearfix;
+}
+
+.is-hidden {
+	display: none;
+}
