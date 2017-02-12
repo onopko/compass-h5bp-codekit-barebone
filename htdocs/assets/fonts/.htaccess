@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteCond %{HTTP:Origin} !^$|http(s)?://(spungold\.)?flat\.is$ [NC]
+RewriteCond %{HTTP:Origin} !^$|http(s)?://(www\.)?johndoe\.com$ [NC]
 RewriteRule \.(woff|eot|ttf|otf)$ - [NC,L]
 RewriteCond %{HTTP_REFERER} !.
 RewriteRule \.(woff|eot|ttf|otf)$ - [F,NC,L]
