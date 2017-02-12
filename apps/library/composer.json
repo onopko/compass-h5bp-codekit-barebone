@@ -1,0 +1,7 @@
+{
+	"require": {
+		"jaybizzle/crawler-detect": "1.*",
+		"mobiledetect/mobiledetectlib": "^2.8",
+		"getkirby/toolkit": "^2.3"
+	}
+}
