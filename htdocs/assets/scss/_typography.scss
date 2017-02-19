@@ -15,6 +15,30 @@
  * ------------------------------------------------------------------ */
 
 /* ---------------------------------
+ *   MyHiragino   */
+@font-face {
+    font-family: 'MyHiragino';
+    font-weight: normal;
+    src: local('ヒラギノ角ゴ ProN W3'),
+         local('Hiragino Kaku Gothic ProN');
+}
+@font-face {
+    font-family: 'MyHiragino';
+    font-weight: bold;
+    src: local('ヒラギノ角ゴ ProN W6'),
+		 local('Hiragino Kaku Gothic ProN W6'),
+		 local('ヒラギノ角ゴ ProN W3'),
+         local('Hiragino Kaku Gothic ProN');
+}
+@font-face {
+    font-family: 'MyHiragino';
+    font-weight: 900;
+    src: local('ヒラギノ角ゴ StdN'),
+		 local('Hiragino Kaku Gothic StdN');
+}
+
+
+/* ---------------------------------
  *   MyYuGothic   */
 @font-face {
     font-family: 'MyYuGothic';
@@ -140,10 +164,10 @@
  *   Adobe Blank   */
 @font-face {
 	font-family: 'Adobe Blank';
-	src: url('/wp/wp-content/themes/kolor/assets/fonts/AdobeBlank/AdobeBlank.eot'); /* IE9 Compat Modes */
-	src: url('/wp/wp-content/themes/kolor/assets/fonts/AdobeBlank/AdobeBlank.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('/wp/wp-content/themes/kolor/assets/fonts/AdobeBlank/AdobeBlank.woff') format('woff'), /* Modern Browsers */
-		 url('/wp/wp-content/themes/kolor/assets/fonts/AdobeBlank/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
+	src: url('/assets/fonts/AdobeBlank/AdobeBlank.eot'); /* IE9 Compat Modes */
+	src: url('/assets/fonts/AdobeBlank/AdobeBlank.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('/assets/fonts/AdobeBlank/AdobeBlank.woff') format('woff'), /* Modern Browsers */
+		 url('/assets/fonts/AdobeBlank/AdobeBlank.ttf')  format('truetype'); /* Safari, Android, iOS */
 	font-weight: normal;
 	font-style: normal;
 }
@@ -155,74 +179,74 @@
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 100;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Thin.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Thin.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Thin.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Thin.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Thin.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Thin.eot');
 }
 @font-face {
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 200;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Light.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Light.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Light.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Light.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Light.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Light.eot');
 }
 @font-face {
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 300;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-DemiLight.eot');
 }
 @font-face {
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 400;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Regular.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Regular.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Regular.eot');
 }
 @font-face {
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 500;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Medium.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Medium.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Medium.eot');
 }
 @font-face {
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 700;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Bold.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.eot');
 }
 @font-face {
     font-family: 'YakuHanJP';
     font-style: normal;
     font-weight: 900;
-    src: url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Black.woff2') format('woff2'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Black.woff') format('woff'),
-    url('/wp/wp-content/themes/kolor/assets/fonts/YakuHanJP/YakuHanJP-Black.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Black.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Black.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Black.eot');
 }
 
 @font-face {
     font-family: 'YakuHanJPBold';
     font-style: normal;
     font-weight: 700;
-    src: url('/common/fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'),
-    url('/common/fonts/YakuHanJP/YakuHanJP-Bold.woff') format('woff'),
-    url('/common/fonts/YakuHanJP/YakuHanJP-Bold.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Bold.eot');
 }
 @font-face {
     font-family: 'YakuHanJPBlack';
     font-style: normal;
     font-weight: 900;
-    src: url('/common/fonts/YakuHanJP/YakuHanJP-Black.woff2') format('woff2'),
-    url('/common/fonts/YakuHanJP/YakuHanJP-Black.woff') format('woff'),
-    url('/common/fonts/YakuHanJP/YakuHanJP-Black.eot');
+    src: url('/assets/fonts/YakuHanJP/YakuHanJP-Black.woff2') format('woff2'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Black.woff') format('woff'),
+    url('/assets/fonts/YakuHanJP/YakuHanJP-Black.eot');
 }
 
 
