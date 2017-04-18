@@ -1,7 +1,7 @@
-/.codekit-cache/
-/.sass-cache/
-/bower_components/
-/node_modules/
+.codekit-cache/
+.sass-cache/
+bower_components/
+node_modules/
 
 # Ignore OS generated files #
 .DS_Store*
