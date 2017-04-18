@@ -7,7 +7,7 @@
 		"uuidString": "7319C245-05A9-4A19-8815-FF4DAAE1FF62"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25813",
 "files": {
 	"\/.bowerrc": {
 		"ft": 8192,
@@ -562,7 +562,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/BrowserStack_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Camino_128.png": {
 		"ft": 32768,
@@ -570,7 +573,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Camino_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Chrome11_128.png": {
 		"ft": 32768,
@@ -578,7 +584,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Chrome11_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Chrome_128.png": {
 		"ft": 32768,
@@ -586,7 +595,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Chrome_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Edge_128.png": {
 		"ft": 32768,
@@ -594,7 +606,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Edge_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Epiphany_64.png": {
 		"ft": 32768,
@@ -602,7 +617,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Epiphany_64.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firebird2003_128.png": {
 		"ft": 32768,
@@ -610,7 +628,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firebird2003_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2004_128.png": {
 		"ft": 32768,
@@ -618,7 +639,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2004_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2005_128.png": {
 		"ft": 32768,
@@ -626,7 +650,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2005_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2009_128.png": {
 		"ft": 32768,
@@ -634,7 +661,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2009_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2013_128.png": {
 		"ft": 32768,
@@ -642,7 +672,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Firefox2013_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Flock_128.png": {
 		"ft": 32768,
@@ -650,7 +683,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Flock_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Fluid_128.png": {
 		"ft": 32768,
@@ -658,7 +694,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Fluid_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Galeon_128.png": {
 		"ft": 32768,
@@ -666,7 +705,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Galeon_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Gecko_128.png": {
 		"ft": 32768,
@@ -674,7 +716,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Gecko_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/iCab3_128.png": {
 		"ft": 32768,
@@ -682,7 +727,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/iCab3_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/iCab4_128.png": {
 		"ft": 32768,
@@ -690,7 +738,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/iCab4_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE4-Mac_128.png": {
 		"ft": 32768,
@@ -698,7 +749,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE4-Mac_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE5-Mac_128.png": {
 		"ft": 32768,
@@ -706,7 +760,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE5-Mac_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE5_48.png": {
 		"ft": 32768,
@@ -714,7 +771,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE5_48.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE6_128.png": {
 		"ft": 32768,
@@ -722,7 +782,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE6_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE7_128.png": {
 		"ft": 32768,
@@ -730,7 +793,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE7_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE9_128.png": {
 		"ft": 32768,
@@ -738,7 +804,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/IE9_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/K-Meleon_82.png": {
 		"ft": 32768,
@@ -746,7 +815,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/K-Meleon_82.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Konqueror_128.png": {
 		"ft": 32768,
@@ -754,7 +826,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Konqueror_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Mozilla_128.png": {
 		"ft": 32768,
@@ -762,7 +837,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Mozilla_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Netscape8_128.png": {
 		"ft": 32768,
@@ -770,7 +848,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Netscape8_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Netscape9_128.png": {
 		"ft": 32768,
@@ -778,7 +859,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Netscape9_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Netscape_128.png": {
 		"ft": 32768,
@@ -786,7 +870,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Netscape_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/OmniWeb_128.png": {
 		"ft": 32768,
@@ -794,7 +881,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/OmniWeb_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Opera_128.png": {
 		"ft": 32768,
@@ -802,7 +892,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Opera_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/PhantomJS_128.png": {
 		"ft": 32768,
@@ -810,7 +903,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/PhantomJS_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Presto_128.png": {
 		"ft": 32768,
@@ -818,7 +914,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Presto_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/README.txt": {
 		"ft": 8192,
@@ -832,7 +931,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Safari_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/SeaMonkey_128.png": {
 		"ft": 32768,
@@ -840,7 +942,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/SeaMonkey_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Shiira_128.png": {
 		"ft": 32768,
@@ -848,7 +953,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Shiira_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Silk_128.png": {
 		"ft": 32768,
@@ -856,7 +964,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Silk_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Swift_128.png": {
 		"ft": 32768,
@@ -864,7 +975,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Swift_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Unknown_128.png": {
 		"ft": 32768,
@@ -872,7 +986,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Unknown_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/Vivaldi_128.png": {
 		"ft": 32768,
@@ -880,7 +997,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/Vivaldi_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/browsers\/WebKit_128.png": {
 		"ft": 32768,
@@ -888,7 +1008,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/browsers\/WebKit_128.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/fonts\/League_Gothic-webfont.eot": {
 		"ft": 8192,
@@ -960,7 +1083,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/cssuseragent\/test\/styles\/validation.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/cssuseragent\/test\/styles\/zebra.css": {
 		"aP": 1,
@@ -3239,7 +3365,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/media\/Modernizr 2 Logo.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/media\/Modernizr 2 Logo.svg": {
 		"ft": 2097152,
@@ -3296,7 +3425,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/alpha.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png": {
 		"ft": 32768,
@@ -3304,7 +3436,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/apng_test.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png": {
 		"ft": 32768,
@@ -3312,7 +3447,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/before-after.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/form_validation.html": {
 		"ft": 8192,
@@ -3335,7 +3473,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/green5x5.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/hashchange.html": {
 		"ft": 8192,
@@ -3364,7 +3505,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/mathml_ref.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/modernizr-1.7.min.js": {
 		"ft": 64,
@@ -3381,7 +3525,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/png_alpha_result.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/pushstate.html": {
 		"ft": 8192,
@@ -3395,7 +3542,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/red30x30.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png": {
 		"ft": 32768,
@@ -3403,7 +3553,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/ruby.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png": {
 		"ft": 32768,
@@ -3411,7 +3564,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/stroked-text.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/style.css": {
 		"aP": 1,
@@ -3429,7 +3585,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg-html-blur.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/svg-img.svg": {
 		"ft": 2097152,
@@ -3453,7 +3612,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/svg_blur.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/table.png": {
 		"ft": 32768,
@@ -3461,7 +3623,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/table.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png": {
 		"ft": 32768,
@@ -3469,7 +3634,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow1.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png": {
 		"ft": 32768,
@@ -3477,7 +3645,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/text-shadow2.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/Windsong-webfont.eot": {
 		"ft": 8192,
@@ -3519,7 +3690,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/modernizr\/test\/caniuse_files\/windsong_font.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/modernizr\/test\/caniuse_files\/xhtml.html": {
 		"ft": 8192,
@@ -4695,7 +4869,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/yakuhanjp\/src\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/yakuhanjp\/src\/favicon.ico": {
 		"ft": 8192,
@@ -4731,7 +4908,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/yakuhanjp\/src\/icomoon\/PNG\/github.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/yakuhanjp\/src\/icomoon\/PNG\/logo_YakuHanJP.png": {
 		"ft": 32768,
@@ -4739,7 +4919,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/yakuhanjp\/src\/icomoon\/PNG\/logo_YakuHanJP.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/yakuhanjp\/src\/icomoon\/PNG\/twitter.png": {
 		"ft": 32768,
@@ -4747,7 +4930,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/yakuhanjp\/src\/icomoon\/PNG\/twitter.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/yakuhanjp\/src\/icomoon\/Read Me.txt": {
 		"ft": 8192,
@@ -4836,7 +5022,10 @@
 		"oA": 2,
 		"oAP": "\/bower_components\/yakuhanjp\/src\/ogp.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/bower_components\/yakuhanjp\/src\/style.css": {
 		"aP": 1,
@@ -5060,7 +5249,10 @@
 		"oA": 0,
 		"oAP": "\/htdocs\/assets\/images\/apple-touch-icon-precomposed.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/htdocs\/assets\/images\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -5068,7 +5260,10 @@
 		"oA": 0,
 		"oAP": "\/htdocs\/assets\/images\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/htdocs\/assets\/images\/favicon.ico": {
 		"ft": 8192,
@@ -5092,7 +5287,10 @@
 		"oA": 0,
 		"oAP": "\/htdocs\/assets\/images\/tile-wide.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/htdocs\/assets\/images\/tile.png": {
 		"ft": 32768,
@@ -5100,7 +5298,10 @@
 		"oA": 0,
 		"oAP": "\/htdocs\/assets\/images\/tile.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/htdocs\/assets\/js\/core.js": {
 		"ft": 64,
@@ -5343,6 +5544,12 @@
 		"ft": 65536,
 		"oA": 2,
 		"oAP": "\/build\/node_modules",
+		"oF": 0
+		},
+	"\/npm-debug.log": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/npm-debug.log",
 		"oF": 0
 		},
 	"\/package.json": {
@@ -6070,6 +6277,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -6270,6 +6481,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -6347,6 +6562,10 @@
 			"optionString": ""
 			},
 		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -6546,6 +6765,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -6597,6 +6820,10 @@
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -6691,6 +6918,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -7137,7 +7368,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -7160,14 +7392,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -7230,7 +7454,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
