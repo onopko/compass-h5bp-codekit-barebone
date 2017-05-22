@@ -76,18 +76,13 @@
 @font-face {
     font-family: 'MySansSerif';
     font-weight: normal;
-    src: local('HelveticaNeue'),
-         local('Helvetica Neue'),
-         local('Helvetica')
+    src: local('Helvetica')
 		 local('Arial');
 }
 @font-face {
     font-family: 'MySansSerif';
     font-weight: bold;
-    src: local('HelveticaNeueBold'),
-         local('HelveticaNeue-Bold'),
-         local('Helvetica Neue Bold'),
-         local('HelveticaBold'),
+    src: local('HelveticaBold'),
          local('Helvetica-Bold'),
          local('Helvetica Bold'),
 		 local('Arial Bold');
@@ -95,10 +90,7 @@
 @font-face {
     font-family: 'MySansSerif';
     font-weight: 900;
-    src: local('HelveticaNeueBlack'),
-         local('HelveticaNeue-Black'),
-         local('Helvetica Neue Black'),
-         local('HelveticaBlack'),
+    src: local('HelveticaBlack'),
          local('Helvetica-Black'),
          local('Helvetica Black'),
          local('Arial Black');
@@ -109,11 +101,11 @@
  *   Adobe Blank   */
 @font-face {
 	font-family: 'Adobe Blank';
-	src: url('/assets/fonts/AdobeBlank/AdobeBlank.eot');
-	src: url('/assets/fonts/AdobeBlank/AdobeBlank.eot?#iefix') format('embedded-opentype');
+	src: url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.eot?raw=true');
+	src: url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.eot?raw=true?#iefix') format('embedded-opentype');
 	src: local('☺︎'),
-		 url('/assets/fonts/AdobeBlank/AdobeBlank.woff') format('woff'),
-		 url('/assets/fonts/AdobeBlank/AdobeBlank.ttf') format('truetype');
+		 url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.otf.woff?raw=true') format('woff'),
+		 url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.ttf?raw=true') format('truetype');
 }
 
 
