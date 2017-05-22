@@ -8,6 +8,21 @@
  *
  * ------------------------------------------------------------------ */
 
+$experimental-support-for-svg: true;
+$base-font-size              : 14px;
+$base-line-height            : 21px;
+$rhythm-unit                 : 'rem';
+
+@include establish-baseline;
+
+
+/* ---------------------------------
+ *   Font   */
+
+// デフォルト Font Family
+$font-family--default         : 'YakuHanJP', 'MySansSerif', 'MyHiragino', 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+
 /* ==================================================================
  *
  * @font-face
