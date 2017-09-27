@@ -126,10 +126,3 @@ body {
     @include font-feature-settings('palt');
     @include font-smoothing();
 }
-
-.x-large { @include compass-font-size(2    * $base-font-size); }
-.large   { @include compass-font-size(1.5  * $base-font-size); }
-.mid     { @include compass-font-size(1.17 * $base-font-size); }
-.normal  { @include compass-font-size(1    * $base-font-size); }
-.small   { @include compass-font-size(.83  * $base-font-size); }
-.x-small { @include compass-font-size(.67  * $base-font-size); }
