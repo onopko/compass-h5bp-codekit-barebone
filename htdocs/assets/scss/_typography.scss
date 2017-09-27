@@ -20,7 +20,7 @@ $rhythm-unit                 : 'rem';
  *   Font   */
 
 // デフォルト Font Family
-$font-family--default         : 'YakuHanJP', 'MySansSerif', 'MyHiragino', 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$font-family--default         : 'AppleSystem', 'MySansSerif', 'MyHiragino', 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 
 
 /* ==================================================================
@@ -111,84 +111,6 @@ $font-family--default         : 'YakuHanJP', 'MySansSerif', 'MyHiragino', 'メ�
          local('Arial Black');
 }
 
-
-/* ---------------------------------
- *   Adobe Blank   */
-@font-face {
-	font-family: 'Adobe Blank';
-	src: url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.eot?raw=true');
-	src: url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.eot?raw=true?#iefix') format('embedded-opentype');
-	src: local('☺︎'),
-		 url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.otf.woff?raw=true') format('woff'),
-		 url('//cdn.rawgit.com/adobe-fonts/adobe-blank/6a7a4866/AdobeBlank.ttf?raw=true') format('truetype');
-}
-
-
-/* ---------------------------------
- *   Yaku Han JP   */
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 100;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Thin.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Thin.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Thin.woff') format('woff');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 200;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Light.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Light.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Light.woff') format('woff');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 300;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-DemiLight.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-DemiLight.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-DemiLight.woff') format('woff');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 400;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Regular.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Regular.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 500;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Medium.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Medium.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 700;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Bold.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'YakuHanJP';
-    font-style: normal;
-    font-weight: 900;
-	src: url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Black.eot');
-    src: local('☺︎'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Black.woff2') format('woff2'),
-         url('//cdn.jsdelivr.net/yakuhanjp/1.3.1/fonts/YakuHanJP/YakuHanJP-Black.woff') format('woff');
-}
 
 
 /* ==================================================================
