@@ -32,5 +32,10 @@
 		"*.log",
 		"*.scss"
 	],
+	"watch": [
+		"/htdocs/assets/css/core.css",
+		"/htdocs/assets/js/core.min.js",
+		"/htdocs/assets/js/plugins.min.js"
+	],
 	"uploadOnSave": false
 }
