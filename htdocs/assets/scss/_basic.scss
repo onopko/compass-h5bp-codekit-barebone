@@ -54,6 +54,8 @@ h6 {
 	padding: 0;
 	font-weight: normal;
 	line-height: 100%;
+
+	@extend %text-antialias;
 }
 
 object {
@@ -63,23 +65,32 @@ object {
 }
 
 a {
+	@include link-color(black);
+
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
 	&:link,
 	&:visited,
 	&:hover,
 	&:active {
-		color: #222;
 		text-decoration: none;
 	}
-
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 p {
 	margin: 0;
+
+	@extend %text-antialias;
 }
 
 p + p {
 	margin-top: 1em;
+}
+
+pre, code, var, samp, kbd, .mono {
+    font-size: 13px;
+    font-family: 'SFMono-Regular', 'Menlo', Consolas, 'Courier New', Courier, Monaco, monospace;
+    line-height: 1.5;
 }
 
 
@@ -100,4 +111,25 @@ input:focus,
 textarea:focus,
 button:focus {
 	outline: none
+}
+
+
+/* ==================================================================
+ * Place Holder
+ * ------------------------------------------------------------------ */
+
+:placeholder-shown {
+    color: #999999;
+}
+::-webkit-input-placeholder {
+    color: #999999;
+}
+:-moz-placeholder {
+    color: #999999; opacity: 1;
+}
+::-moz-placeholder {
+    color: #999999; opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #999999;
 }

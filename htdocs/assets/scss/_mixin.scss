@@ -12,7 +12,7 @@
  * REM Font Size
  * ------------------------------------------------------------------ */
 
-@mixin compass-font-size ($size) {
+@mixin font-size ($size) {
     @include output-rhythm(font-size, convert-length($size, $rhythm-unit));
 }
 
@@ -37,8 +37,11 @@
  * ------------------------------------------------------------------ */
 
 @mixin font-feature-settings ($_mode: 'kern') {
-    font-feature-settings: '#{$_mode}' 1;
-    -webkit-font-feature-settings: '#{$_mode}' 1;
+	-webkit-font-feature-settings: '#{$_mode}';
+	-moz-font-feature-settings: '#{$_mode}=1';
+	-moz-font-feature-settings: '#{$_mode}';
+	-ms-font-feature-settings: '#{$_mode}' 1;
+	font-feature-settings: '#{$_mode}';
 }
 
 
@@ -47,19 +50,119 @@
  * ------------------------------------------------------------------ */
 
 @mixin mq--pc {
-    @media only screen and (min-width: 641px) and (min-device-width: 768px) {
+    @media only screen and (min-width: #{$bp--sp-max + 1}px) {
+        @content;
+    }
+}
+
+@mixin mq--pc-s {
+    @media only screen and (min-width: #{$bp--sp-max + 1}px) and (max-width: #{$bp--pc-min}px) {
+        @content;
+    }
+}
+
+@mixin mq--pc-l {
+    @media only screen and (min-width: #{$bp--pc-max + 1}px) {
         @content;
     }
 }
 
 @mixin mq--sp {
-    @media only screen and (min-device-width: 320px) and (max-device-width: 640px), (max-width: 640px) {
+    @media only screen and (min-device-width: #{$bp--sp-min}px) and (max-width: #{$bp--sp-max}px) {
         @content;
     }
+}
 
-	@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
-        @content;
+
+/* ==================================================================
+ * Media Queries Shrink Ordert Control
+ * 圧縮時に意図したとおりに @media のカスケードが機能するよう CSS 最前で出力
+ * ------------------------------------------------------------------ */
+
+@include mq--pc {
+	body { width: 100%; }
+}
+@include mq--pc-s {
+	body { width: 100%; }
+}
+@include mq--pc-l {
+	body { width: 100%; }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    body { width: 100%; }
+}
+@include mq--sp {
+	body { width: 100%; }
+}
+
+
+/* ==================================================================
+ * pc
+ * ------------------------------------------------------------------ */
+
+@mixin pc ($_map) {
+    @include mq--pc {
+    	@each $property, $value in $_map {
+    		#{$property}: cal--pc($value);
+        }
     }
+	@include mq--pc-s {
+		@each $property, $value in $_map {
+			#{$property}: cal--pc-min($value);
+	    }
+	}
+	@include mq--pc-l {
+		@each $property, $value in $_map {
+			#{$property}: cal--pc-max($value);
+	    }
+	}
+}
+
+@mixin pc-only-min ($_map) {
+    @include mq--pc {
+    	@each $property, $value in $_map {
+    		#{$property}: cal--pc($value);
+        }
+    }
+	@include mq--pc-s {
+		@each $property, $value in $_map {
+			#{$property}: cal--pc-min($value);
+	    }
+	}
+}
+
+@mixin pc-only-max ($_map) {
+    @include mq--pc {
+    	@each $property, $value in $_map {
+    		#{$property}: cal--pc($value);
+        }
+    }
+	@include mq--pc-l {
+		@each $property, $value in $_map {
+			#{$property}: cal--pc-min($value);
+	    }
+	}
+}
+
+
+/* ==================================================================
+ * Calcurate vw
+ * ------------------------------------------------------------------ */
+
+@function cal--pc($_val) {
+    @return 1vw * ($_val / $width--base-pc * 100);
+}
+
+@function cal--pc-min($_val) {
+    @return 1px * ($_val * 0.5 * ($bp--pc-min / $width--base-pc));
+}
+
+@function cal--pc-max($_val) {
+    @return 1px * ($_val * 0.5 * ($bp--pc-max / $width--base-pc));
+}
+
+@function cal--sp($_val) {
+    @return 1vw * ($_val / $width--base-sp * 100);
 }
 
 
@@ -128,55 +231,6 @@
  * CSS Animation
  * ------------------------------------------------------------------ */
 
-// duration     Specifies how many seconds or milliseconds an animation takes to complete one cycle. Default 0
-// delay        Specifies when the animation will start. Default 0
-// function     Describes how the animation will progress over one cycle of its duration. Default "ease"
-// count        Specifies the number of times an animation is played. Default 1
-// fill-mode    Specifies if the effects of an animation are before the animation starts and after it ends.
-// visibility   Determines whether or not a transformed element is visible when it is not facing the screen.
-
-@mixin count($count: 1) {
-  -webkit-animation-iteration-count: $count;
-     -moz-animation-iteration-count: $count;
-      -ms-animation-iteration-count: $count;
-          animation-iteration-count: $count;
-}
-
-@mixin duration($duration: 1s) {
-  -webkit-animation-duration: $duration;
-     -moz-animation-duration: $duration;
-      -ms-animation-duration: $duration;
-          animation-duration: $duration;
-}
-
-@mixin delay($delay: .2s) {
-  -webkit-animation-delay: $delay;
-     -moz-animation-delay: $delay;
-      -ms-animation-delay: $delay;
-          animation-delay: $delay;
-}
-
-@mixin function($function: ease) {
-  -webkit-animation-timing-function: $function;
-     -moz-animation-timing-function: $function;
-      -ms-animation-timing-function: $function;
-          animation-timing-function: $function;
-}
-
-@mixin fill-mode($fill: both) {
-  -webkit-animation-fill-mode: $fill;
-     -moz-animation-fill-mode: $fill;
-      -ms-animation-fill-mode: $fill;
-          animation-fill-mode: $fill;
-}
-
-@mixin animation-name($animation-name) {
-  -webkit-animation-name: $animation-name;
-     -moz-animation-name: $animation-name;
-      -ms-animation-name: $animation-name;
-          animation-name: $animation-name;
-}
-
 @mixin keyframes($animation-name) {
 	@-webkit-keyframes #{$animation-name} {
 		@content;
@@ -202,22 +256,61 @@
 
 /* ==================================================================
  * Image Rendering
+ * https://builtvisible.com/image-scaling-in-css/
  * ------------------------------------------------------------------ */
 
-// https://gehrcke.de/2014/11/css-crispy-downscaled-images/
-@mixin image-crisp () {
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: -webkit-optimize-contrast;
-	-ms-interpolation-mode: nearest-neighbor;
+@mixin image-crisp($_bool: true) {
+	@if $_bool == true {
+		-ms-interpolation-mode: nearest-neighbor;
+
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: -webkit-crisp-edges;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -o-crisp-edges;
+		image-rendering: crisp-edges;
+	}
+	@else {
+		-ms-interpolation-mode: bicubic;
+
+		image-rendering: auto;
+	}
 }
 
-// https://builtvisible.com/image-scaling-in-css/
-@mixin image-pixelated () {
-	-ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
-	image-rendering: -webkit-optimize-contrast; // Safari 6, UC Browser 9.9
-	image-rendering: -webkit-crisp-edges; // Safari 7+
-	image-rendering: -moz-crisp-edges; // Firefox 3.6+
-	image-rendering: -o-crisp-edges; // Opera 12
-	image-rendering: pixelated; // Chrome 41+ and Opera 26+
+
+/* ==================================================================
+ * Link Color
+ * ------------------------------------------------------------------ */
+
+@mixin link-color ($_color: 'black') {
+    @if $_color == 'black' {
+		@include hover {
+			color: $color--gray;
+		}
+		&:link,
+		&:visited {
+			color: $color--black;
+		}
+		&:active {
+			color: $color--gray;
+		}
+    }
+}
+
+
+/* ==================================================================
+ *
+ * Extender
+ *
+ * ------------------------------------------------------------------ */
+
+%cover {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+%text-antialias {
+    @at-root .ua-desktop-windows & {
+        transform: rotate(0.03deg);
+    }
 }
