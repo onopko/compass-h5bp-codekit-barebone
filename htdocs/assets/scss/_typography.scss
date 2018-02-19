@@ -8,21 +8,6 @@
  *
  * ------------------------------------------------------------------ */
 
-$experimental-support-for-svg: true;
-$base-font-size              : 14px;
-$base-line-height            : 21px;
-$rhythm-unit                 : 'rem';
-
-@include establish-baseline;
-
-
-/* ---------------------------------
- *   Font   */
-
-// デフォルト Font Family
-$font-family--default         : 'AppleSystem', 'MySansSerif', 'MyHiragino', 'メイリオ', Meiryo, Osaka, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-
-
 /* ==================================================================
  *
  * @font-face
@@ -78,39 +63,42 @@ $font-family--default         : 'AppleSystem', 'MySansSerif', 'MyHiragino', 'メ
 
 
 /* ---------------------------------
- *   AppleSystem   */
+ *   System Serif   */
+
 @font-face {
-    font-family: 'AppleSystem';
+    font-family: 'SystemSerif';
     src: local('-apple-system'),
-         local('BlinkMacSystemFont');
+         local('BlinkMacSystemFont'),
+         local('.SFNSDisplay-Regular'),
+         // local('Segoe UI'),
+         local('Helvetica'),
+         local('Arial');
 }
 
 
-/* ---------------------------------
- *   MySansSerif   */
-@font-face {
-    font-family: 'MySansSerif';
-    font-weight: normal;
-    src: local('Helvetica')
-		 local('Arial');
-}
-@font-face {
-    font-family: 'MySansSerif';
-    font-weight: bold;
-    src: local('HelveticaBold'),
-         local('Helvetica-Bold'),
-         local('Helvetica Bold'),
-		 local('Arial Bold');
-}
-@font-face {
-    font-family: 'MySansSerif';
-    font-weight: 900;
-    src: local('HelveticaBlack'),
-         local('Helvetica-Black'),
-         local('Helvetica Black'),
-         local('Arial Black');
-}
+/* ==================================================================
+ *
+ * Compass
+ *
+ * ------------------------------------------------------------------ */
 
+$base-font-size  : 14px;
+$base-line-height: 21px;
+$rhythm-unit     : 'rem';
+
+@include establish-baseline;
+
+
+/* ==================================================================
+ *
+ * Font
+ *
+ * ------------------------------------------------------------------ */
+
+$font-family--jp-mac: 'MyHiragino', Osaka;
+$font-family--jp-win: 'メイリオ', Meiryo, 'MS UI Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic';
+
+$font-family--default: 'SystemSerif', $font-family--jp-mac, $font-family--default-win, sans-serif;
 
 
 /* ==================================================================
@@ -125,4 +113,8 @@ body {
 
     @include font-feature-settings('palt');
     @include font-smoothing();
+
+	@at-root .ua-ios-7 & { @include font-feature-settings('pkna'); }
+	@at-root .ua-ios-8 & { @include font-feature-settings('pkna'); }
+	@at-root .ua-ios-9 & { @include font-feature-settings('pkna'); }
 }
