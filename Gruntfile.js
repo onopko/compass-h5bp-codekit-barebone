@@ -2,6 +2,15 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
+		filesize: {
+			base: {
+				files: [{
+					expand: true,
+					cwd: 'htdocs/assets/css/',
+					src: ['*.css']
+				}]
+			}
+		},
         css_mqpacker: {
 			main: {
 				options : {
@@ -16,5 +25,5 @@ module.exports = function(grunt) {
 		}
     });
 
-    grunt.registerTask('default', ['css_mqpacker']);
+    grunt.registerTask('default', ['filesize', 'css_mqpacker', 'filesize']);
 };

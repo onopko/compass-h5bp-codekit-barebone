@@ -1,19 +1,18 @@
 {
-	"name": "compass_h5bp_codekit_barebone",
-	"private": true,
+    "name": "compass_h5bp_codekit_barebone",
+    "private": true,
     "version": "1.0.0",
     "description": "",
     "dependencies": {
-  	  "fs-extra": "^1.0.0",
+        "fs-extra": "^1.0.0",
         "grunt": "^0.4.5",
-		"grunt-combine-mq": "^0.6.0",
         "grunt-css-mqpacker": "^3.0.1",
+        "grunt-filesize": "0.0.7",
         "load-grunt-tasks": "^3.1.0",
         "time-grunt": "~0.2.8"
     },
-    "devDependencies": {
-    },
+    "devDependencies": {},
     "engines": {
-      "node": ">=0.8.0"
+        "node": ">=0.8.0"
     }
 }
