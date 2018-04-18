@@ -233,6 +233,186 @@
 })(jQuery);
 
 
+/* ==================================================================
+ *
+ * Auto will-change for Velocity.js
+ *
+ * ------------------------------------------------------------------
+ *
+ * Takehiko Ono (aguije inc.)
+ * http://onotakehiko.com/
+ *
+ * ------------------------------------------------------------------ */
+
+$(function() {
+
+	var isDefaultMobileHA = false;
+
+	var isIE = function () {
+		var ua = window.navigator.userAgent;
+
+		var msie = ua.indexOf('MSIE ');
+		if (msie > 0) {
+			return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+		}
+
+		var trident = ua.indexOf('Trident/');
+		if (trident > 0) {
+		var rv = ua.indexOf('rv:');
+			return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+		}
+
+		var edge = ua.indexOf('Edge/');
+		if (edge > 0) {
+			return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+		}
+
+		return false;
+	};
+
+	if ($.fn.velocity) {
+		var velocity = $.fn.velocity;
+
+		$.fn.velocity = function () {
+			if ((arguments[0] && typeof arguments[0] === 'object') && (arguments[1] && typeof arguments[1] === 'object')) {
+				var keys = Object.keys(arguments[0]);
+
+				var autoBackfaceVisibility = true;
+				if (arguments[1].autoBackfaceVisibility !== undefined && arguments[1].autoBackfaceVisibility === false) {
+					autoBackfaceVisibility = false;
+				}
+
+				/* ==================================================================
+				 * for Modern Browsers
+				 * ------------------------------------------------------------------ */
+
+				if (isIE() === false) {
+					if (arguments[1].autoWillChange !== undefined && arguments[1].autoWillChange === false) {
+					}
+					else {
+						var willChangeProperties = [];
+
+						for (var i = 0, count_i = keys.length; i < count_i; i++) {
+							var key = keys[i];
+
+							var match = key.match(/^(translate|scale|rotate|matrix)([XYZ]?|3d)$|^skew([XY]?)$|^perspective$/);
+							if (match && match[0]) {
+								willChangeProperties.push('transform');
+							}
+							else {
+								var match = key.match(/^(top|right|bottom|left|opacity|scroll-position|animation)$/);
+								if (match && match[0]) {
+									willChangeProperties.push(key);
+								}
+								else if (!match) {
+									key = key.replace(/[A-Z]/g, '-$&').toLowerCase();
+									willChangeProperties.push(key);
+								}
+							}
+						}
+
+						// key の重複を削除
+						willChangeProperties = willChangeProperties.filter(function (x, i, self) {
+							return self.indexOf(x) === i;
+						});
+
+						// 配列をシリアライズ
+						willChangeProperties = willChangeProperties.join(',');
+
+						// will-change • backface-visibility を適用
+						if (autoBackfaceVisibility) {
+							$(this).css({ willChange: willChangeProperties, backfaceVisibility: 'hidden' });
+						}
+						else {
+							$(this).css({ willChange: willChangeProperties });
+						}
+
+						// Velocity.js の mobileHA オプションを無効化（translate3dハックをさせない）
+						if (isDefaultMobileHA === false) {
+							$.extend(arguments[1], { mobileHA: false });
+						}
+
+						// complete をオーバーライド
+						if (arguments[1].complete) {
+							var originalComplete = arguments[1].complete;
+
+							arguments[1].complete = function () {
+								if (autoBackfaceVisibility) {
+									$(this).css({ willChange: 'auto', backfaceVisibility: 'visible' });
+								}
+								else {
+									$(this).css({ willChange: 'auto' });
+								}
+
+								return originalComplete.apply(this);
+							};
+						}
+						else {
+							arguments[1].complete = function () {
+								if (autoBackfaceVisibility) {
+									$(this).css({ willChange: 'auto', backfaceVisibility: 'visible' });
+								}
+								else {
+									$(this).css({ willChange: 'auto' });
+								}
+							};
+						}
+					}
+				}
+
+				/* ==================================================================
+				 * for IE, Edge
+				 * ------------------------------------------------------------------ */
+
+				else {
+					var has3dProperty = false;
+					var willPositionChange = false;
+
+					for (var i = 0, count_i = keys.length; i < count_i; i++) {
+						var key = keys[i];
+
+						var match = key.match(/^(translate|scale|rotate|matrix)([XYZ]?|3d)$|^skew([XY]?)$|^perspective$/);
+						if (match && match[0]) {
+							if (match[0] === 'translateZ' || match[0] === 'translate3d') {
+								has3dProperty = true;
+							}
+
+							willPositionChange = true;
+						}
+						else {
+							var match = key.match(/^(top|right|bottom|left)$/);
+							if (match && match[0]) {
+								willPositionChange = true;
+							}
+						}
+					}
+
+					if (willPositionChange) {
+						if ($(this).css('transform')) {
+							if ($(this).css('transform').indexOf('matrix3d') < 0) {
+								$(this).css({ transform: 'translateZ(1px)' });
+							}
+						}
+						else {
+							$(this).css({ transform: 'translateZ(1px)' });
+						}
+
+						if (has3dProperty === false) {
+							if (arguments[0].translateZ === undefined) {
+								arguments[0].translateZ = 1;
+							}
+						}
+					}
+				}
+			}
+
+			return velocity.apply(this, arguments);
+		};
+	}
+
+});
+
+
 // Place any jQuery/helper plugins in here.
 
 //@codekit-append "../../../bower_components/cssuseragent/cssua.js"
