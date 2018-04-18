@@ -8,6 +8,21 @@
  *
  * ------------------------------------------------------------------ */
 
+/* ==================================================================
+ * Compass Settings
+ * ------------------------------------------------------------------ */
+
+$base-font-size  : 14px;
+$base-line-height: 21px;
+$rhythm-unit     : 'rem';
+
+@include establish-baseline;
+
+
+/* ==================================================================
+ * Elements
+ * ------------------------------------------------------------------ */
+
 html,
 body {
 	margin: 0;
@@ -17,7 +32,15 @@ body {
 }
 
 body {
-	-ms-overflow-style: none;
+	font-family: $font-family--default;
+	text-rendering: optimizeLegibility;
+
+    @include font-feature-settings('palt');
+    @include font-smoothing();
+
+	@at-root .ua-ios-7 & { @include font-feature-settings('pkna'); }
+	@at-root .ua-ios-8 & { @include font-feature-settings('pkna'); }
+	@at-root .ua-ios-9 & { @include font-feature-settings('pkna'); }
 }
 
 ul,
