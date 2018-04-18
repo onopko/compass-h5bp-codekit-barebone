@@ -97,7 +97,7 @@
 
 
 /* ==================================================================
- * pc
+ * PC
  * ------------------------------------------------------------------ */
 
 @mixin pc ($_map) {
@@ -142,6 +142,19 @@
 			#{$property}: cal--pc-min($value);
 	    }
 	}
+}
+
+
+/* ==================================================================
+ * SP
+ * ------------------------------------------------------------------ */
+
+@mixin sp ($_map) {
+    @include mq--sp {
+    	@each $property, $value in $_map {
+    		#{$property}: cal--sp($value);
+        }
+    }
 }
 
 
@@ -313,4 +326,13 @@
     @at-root .ua-desktop-windows & {
         transform: rotate(0.03deg);
     }
+}
+
+%scrolling  {
+	-webkit-overflow-scrolling: touch;
+
+	-ms-overflow-style: none;
+	-ms-scroll-chaining: none;
+	overscroll-behavior: contain;
+	will-change: scroll-position;
 }
